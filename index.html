@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Огранизация походов в горы: Эльбрус, Кавказ, Урал, Камчатка">
+  <title>LifeTour</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/icon-32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-180.png">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-300.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-400.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-500.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-600.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-700.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/montserrat-v26-cyrillic_latin-800.woff2" type="font/woff2" as="font"
+    crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+
+      <section class="header__nav main-nav">
+        <div class="container">
+          <div class="main-nav__wrapper">
+            <a href="index.html"><img class="main-nav__logo" src="img/logo-header.svg" width="142" height="42"
+                alt="логотип компании LifeTour"></a>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">Туры</li>
+              <li class="main-nav__item">Обучение</li>
+              <li class="main-nav__item">О нас</li>
+              <li class="main-nav__item">Отзывы</li>
+              <li class="main-nav__item">Фотографии</li>
+              <li class="main-nav__item">Контакты</li>
+            </ul>
+            <a class="main-nav__phone" href="tel:+78005555555">8 800 725-32-32</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="header__hero hero">
+        <div class="hero__slider swiper" data-swiper="swiper-hero">
+          <ul class="hero__slider-list swiper-wrapper">
+            <li class="hero__slider-item swiper-slide">
+              <div class="hero__background-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/hero/caucasus-desktop.webp, img/hero/caucasus-desktop@2x.webp 2x" width="1200"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/hero/caucasus-tablet.webp, img/hero/caucasus-tablet@2x.webp 2x" width="768"
+                    type="image/webp">
+                  <img width="350" height="568"
+                    srcset="img/hero/caucasus-mobile.webp, img/hero/caucasus-mobile@2x.webp 2x"
+                    src="img/hero/caucasus-mobile.jpg" alt="фотография Кавказа">
+                </picture>
+              </div>
+              <div class="hero__content container">
+                <h1>Захватывающие вершины Кавказа</h1>
+                <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
+                  горы Чегет.</p>
+                <button class="btn" type="button">Смотреть тур</button>
+                <div class="hero__media hero__media--video">
+                  <div class="hero__media-preview">
+                    <div class="hero__media-button" tabindex="0" aria-label="включить видео">
+                      <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 11L0 0V22L12 11Z" fill="none" />
+                      </svg>
+                    </div>
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/hero/video_preview_desktop.webp, img/hero/video_preview_desktop@2x.webp 2x"
+                        width="482" height="317" type="image/webp">
+                      <img width="442" height="300"
+                        srcset="img/hero/video_preview_tablet.webp, img/hero/video_preview_tablet@2x.webp 2x"
+                        src="img/hero/video_preview_tablet.jpg" alt="тур по Кавказу">
+                    </picture>
+                  </div>
+                  <span class="hero__media-iframe">
+                    <iframe class="hero__media-source" width="482" height="317"
+                      src="https://www.youtube.com/embed/9TZXsZItgdw?si=y9KGVehvWZkVYroX" title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </span>
+                </div>
+                <div class="hero__parameters hero__parameters--activity">6 дней/5 ночей</div>
+                <div class="hero__parameters hero__parameters--complexity">Высокая сложность</div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="hero__pagination swiper-pagination" data-pagination="hero__pagination">
+            <div class="hero__pagination-point"></div>
+            <div class="hero__pagination-point"></div>
+            <div class="hero__pagination-point"></div>
+          </div>
+
+        </div>
+      </section>
+
+
+    </header>
+    <main>
+      <section class="intro">
+
+      </section>
+    </main>
+    <footer>
+      <div class="container"></div>
+    </footer>
+  </div>
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
