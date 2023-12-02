@@ -1,0 +1,34 @@
+.main-nav {
+  position: absolute;
+  min-width: 1200px;
+  left: calc(50% - 600px);
+}
+
+.main-nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-additional-100;
+  color: $color-default-white;
+  min-height: 126px;
+  padding: 0 20px;
+}
+
+.main-nav__logo {
+  padding-left: 29px;
+  min-width: 142px;
+  min-height: 42px;
+}
+
+.main-nav__phone {
+  color: inherit;
+}
+
+.main-nav__list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 16px;
+}
