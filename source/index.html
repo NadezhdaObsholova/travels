@@ -27,28 +27,33 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" data-set="hero">
 
       <section class="header__nav main-nav">
-        <div class="container">
-          <div class="main-nav__wrapper">
-            <a href="index.html"><img class="main-nav__logo" src="img/logo-header.svg" width="142" height="42"
-                alt="логотип компании LifeTour"></a>
-            <ul class="main-nav__list">
-              <li class="main-nav__item">Туры</li>
-              <li class="main-nav__item">Обучение</li>
-              <li class="main-nav__item">О нас</li>
-              <li class="main-nav__item">Отзывы</li>
-              <li class="main-nav__item">Фотографии</li>
-              <li class="main-nav__item">Контакты</li>
-            </ul>
-            <a class="main-nav__phone" href="tel:+78005555555">8 800 725-32-32</a>
-          </div>
+
+        <div class="main-nav__wrapper">
+          <button class="main-nav__toggle" type="button" aria-label="кнопка управления меню."></button>
+          <a class="main-nav__logo-link" href="index.html">
+            <svg width="142" height="42">
+              <use href="img/sprite.svg#logo-header"></use>
+            </svg>
+          </a>
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Туры</a></li>
+            <li class="main-nav__item"><a href="#">Обучение</a></li>
+            <li class="main-nav__item"><a href="#">О нас</a></li>
+            <li class="main-nav__item"><a href="#">Отзывы</a></li>
+            <li class="main-nav__item"><a href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#">Контакты</a></li>
+          </ul>
+          <a class="main-nav__phone" href="tel:+78005555555">8 800 725-32-32</a>
         </div>
+
       </section>
 
       <section class="header__hero hero">
-        <div class="hero__slider swiper" data-swiper="swiper-hero">
+        <h1 class="visually-hidden">Сайт туристической компании LifeTour</h1>
+        <div class="hero__slider swiper" data-swiper="hero-slider">
           <ul class="hero__slider-list swiper-wrapper">
             <li class="hero__slider-item swiper-slide">
               <div class="hero__background-img">
@@ -59,21 +64,22 @@
                   <source media="(min-width: 768px)"
                     srcset="img/hero/caucasus-tablet.webp, img/hero/caucasus-tablet@2x.webp 2x" width="768"
                     type="image/webp">
-                  <img width="350" height="568"
+                  <img width="362" height="568"
                     srcset="img/hero/caucasus-mobile.webp, img/hero/caucasus-mobile@2x.webp 2x"
                     src="img/hero/caucasus-mobile.jpg" alt="фотография Кавказа">
                 </picture>
               </div>
               <div class="hero__content container">
-                <h1>Захватывающие вершины Кавказа</h1>
-                <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину
+                <h2>Захватывающие <br class="desktop-only">вершины Кавказа</h2>
+                <p>В сопровождении опытных гидов <br class="mobile-only">вы пройдёте <br class="tablet-only">через
+                  потрясающие ландшафты и совершите восход <br class="mobile-only"><br class="tablet-only">на вершину
                   горы Чегет.</p>
                 <button class="btn" type="button">Смотреть тур</button>
-                <div class="hero__media hero__media--video">
-                  <div class="hero__media-preview">
-                    <div class="hero__media-button" tabindex="0" aria-label="включить видео">
-                      <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 11L0 0V22L12 11Z" fill="none" />
+                <div class="hero__media hero__media--video" data-video="hero-video">
+                  <div class="hero__media-preview" data-preview="preview">
+                    <div class="hero__media-button" tabindex="0" aria-label="включить видео" data-button="video-button">
+                      <svg width="14" height="26" viewBox="0 0 14 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 13L1 2V24L13 13Z" fill="none" stroke="none" />
                       </svg>
                     </div>
                     <picture>
@@ -85,37 +91,404 @@
                         src="img/hero/video_preview_tablet.jpg" alt="тур по Кавказу">
                     </picture>
                   </div>
-                  <span class="hero__media-iframe">
-                    <iframe class="hero__media-source" width="482" height="317"
-                      src="https://www.youtube.com/embed/9TZXsZItgdw?si=y9KGVehvWZkVYroX" title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowfullscreen></iframe>
-                  </span>
                 </div>
-                <div class="hero__parameters hero__parameters--activity">6 дней/5 ночей</div>
-                <div class="hero__parameters hero__parameters--complexity">Высокая сложность</div>
+                <ul class="hero__parameters-list">
+                  <li class="hero__parameters-item hero__parameters--activity">
+                    <span>
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                    </span>
+                    <span>6 дней/5 ночей</span>
+                  </li>
+                  <li class="hero__parameters-item hero__parameters--complexity">
+                    <span>
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#level"></use>
+                      </svg>
+                    </span>
+                    <span>Высокая сложность</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="hero__slider-item swiper-slide">
+              <div class="hero__background-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/hero/kamchatka-desktop.webp, img/hero/kamchatka-desktop@2x.webp 2x" width="1200"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/hero/kamchatka-tablet.webp, img/hero/kamchatka-tablet@2x.webp 2x" width="768"
+                    type="image/webp">
+                  <img width="362" height="568"
+                    srcset="img/hero/kamchatka-mobile.webp, img/hero/kamchatka-mobile@2x.webp 2x"
+                    src="img/hero/kamchatka-mobile.jpg" alt="фотография Кавказа">
+                </picture>
+              </div>
+              <div class="hero__content container">
+                <h2>Невероятная <br class="desktop-only">природа Камчатки</h2>
+                <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых
+                  нетронутых уголков дикой природы в мире.</p>
+                <button class="btn" type="button">Смотреть тур</button>
+                <div class="hero__media hero__media--photos">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/hero/photos-desktop.webp, img/hero/photos-desktop@2x.webp 2x" width="442" height="365"
+                      type="image/webp">
+                    <img width="442" height="365"
+                      srcset="img/hero/photos-tablet.webp, img/hero/photos_tablet@2x.webp 2x"
+                      src="img/hero/photos-tablet.png" alt="тур по Камчатке">
+                  </picture>
+                </div>
+                <ul class="hero__parameters-list">
+                  <li class="hero__parameters-item hero__parameters--activity">
+                    <span>
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                    </span>
+                    <span>9 дней/10 ночей</span>
+                  </li>
+                  <li class="hero__parameters-item hero__parameters--complexity">
+                    <span>
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#level"></use>
+                      </svg>
+                    </span>
+                    <span>Средняя сложность</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="hero__slider-item swiper-slide">
+              <div class="hero__background-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/hero/altai-desktop.webp, img/hero/altai-desktop@2x.webp 2x" width="1200"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/hero/altai-tablet.webp, img/hero/altai-tablet@2x.webp 2x" width="768" type="image/webp">
+                  <img width="362" height="568" srcset="img/hero/altai-mobile.webp, img/hero/altai-mobile@2x.webp 2x"
+                    src="img/hero/altai-mobilex.jpg" alt="фотография Кавказа">
+                </picture>
+              </div>
+              <div class="hero__content container">
+                <h2>Магические пейзажи Алтайского Края</h2>
+                <p>Алтайский трекинг-тур — это захватывающее приключение с посещением магических и захватывающих
+                  дух ландшафтов Алтайских гор.</p>
+                <button class="btn" type="button">Смотреть тур</button>
+                <div class="hero__media hero__media--audio">
+                  <iframe frameborder="0" style="border:none;width:100%;height:210px;" width="100%" height="210"
+                    src="https://music.yandex.ru/iframe/track/112912322/25474374">Слушайте <a
+                      href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
+                      фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
+                </div>
+                <ul class="hero__parameters-list">
+                  <li class="hero__parameters-item hero__parameters--activity">
+                    <span>
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                    </span>
+                    <span>8 дней/7 ночей</span>
+                  </li>
+                  <li class="hero__parameters-item hero__parameters--complexity">
+                    <span>
+                      <svg width="12" height="12">
+                        <use href="img/sprite.svg#level"></use>
+                      </svg>
+                    </span>
+                    <span>Легкая сложность</span>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
-
-          <div class="hero__pagination swiper-pagination" data-pagination="hero__pagination">
-            <div class="hero__pagination-point"></div>
-            <div class="hero__pagination-point"></div>
-            <div class="hero__pagination-point"></div>
+          <div class="hero__pagination swiper-pagination" data-pagination="hero-pagination">
+            <div class="hero__pagination-bullet" aria-label="1 слайд"></div>
+            <div class="hero__pagination-bullet" aria-label="2 слайд"></div>
+            <div class="hero__pagination-bullet" aria-label="3 слайд"></div>
           </div>
-
         </div>
       </section>
-
-
     </header>
-    <main>
-      <section class="intro">
 
+    <main>
+
+      <section class="tours container" data-test="tours">
+        <div class="tours__header">
+          <h2>Ближайшие туры</h2>
+          <span class="tours__header-shadow">Ближайшие туры</span>
+          <div class="tous__controls">
+            <button class="tours__button btn btn--arrow" data-button="tours-button-prev">
+              <svg width="14" height="9">
+                <use href="img/sprite.svg#btn-left"></use>
+              </svg>
+            </button>
+            <button class="tours__button btn btn--arrow" data-button="tours-button-next">
+              <svg width="14" height="9">
+                <use href="img/sprite.svg#btn-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="tours__slider swiper" data-swiper="tours-slider">
+          <ul class="tours__slider-list swiper-wrapper">
+            <li class="tours__slider-item swiper-slide">
+              <div class="tours__slide-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/tours/elbrus-desktop.webp, img/tours/elbrus-desktop@2x.webp 2x" width="1200"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours/elbrus-tablet.webp, img/tours/elbrus-tablet@2x.webp 2x" width="768"
+                    type="image/webp">
+                  <img width="320" height="416"
+                    srcset="img/tours/elbrus-mobile.webp, img/tours/elbrus-mobile@2x.webp 2x"
+                    src="img/tours/elbrus-mobile.jpg" alt="фотография Кавказа">
+                </picture>
+              </div>
+              <div class="tours__info">
+                <div class="tours__parameters">
+                  <a class="tours__place btn" href="#">
+                    <svg width="18" height="18">
+                      <use href="img/sprite.svg#point"></use>
+                    </svg>
+                    <span>Кавказ
+                    </span>
+                  </a>
+                  <div class="tours__duration">
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                      <p>4 дня</p>
+                    </div>
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <p>3 ночи</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>Путешествие вокруг Эльбруса</h3>
+                <div class="tours__parameters">
+                  <div class="tours__difficulty">
+                    <div class="tours__parameters-title">Сложность:</div>
+                    <div class="tours__parameters-data">
+                      <svg width="84" height="16">
+                        <use href="img/sprite.svg#four-stars"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="tours__timing">
+                    <div class="tours__parameters-title">Даты набора:</div>
+                    <div class="tours__parameters-data">12.06-19.06</div>
+                  </div>
+                  <div class="tours__group">
+                    <div class="tours__parameters-title">Группа:</div>
+                    <div class="tours__parameters-data">до 15 чел.</div>
+                  </div>
+                </div>
+            </li>
+            <li class="tours__slider-item swiper-slide">
+              <div class="tours__slide-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/tours/belukha-desktop.webp, img/tours/belukha-desktop@2x.webp 2x" width="1200"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours/belukha-tablet.webp, img/tours/belukha-tablet@2x.webp 2x" width="768"
+                    type="image/webp">
+                  <img width="320" height="416"
+                    srcset="img/tours/belukha-mobile.webp, img/tours/belukha-mobile@2x.webp 2x"
+                    src="img/tours/belukha-mobile.jpg" alt="фотография Белухи">
+                </picture>
+              </div>
+              <div class="tours__info">
+                <div class="tours__parameters">
+                  <a class="tours__place btn" href="#">
+                    <svg width="18" height="18">
+                      <use href="img/sprite.svg#point"></use>
+                    </svg>
+                    <span>Алтай
+                    </span>
+                  </a>
+                  <div class="tours__duration">
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                      <p>14 дней</p>
+                    </div>
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <p>13 ночей</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>Путь к подножию Белухи</h3>
+                <div class="tours__parameters">
+                  <div class="tours__difficulty">
+                    <div class="tours__parameters-title">Сложность:</div>
+                    <div class="tours__parameters-data">
+                      <svg width="84" height="16">
+                        <use href="img/sprite.svg#three-stars"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="tours__timing">
+                    <div class="tours__parameters-title">Даты набора:</div>
+                    <div class="tours__parameters-data">14.06-23.06</div>
+                  </div>
+                  <div class="tours__group">
+                    <div class="tours__parameters-title">Группа:</div>
+                    <div class="tours__parameters-data">до 25 чел.</div>
+                  </div>
+                </div>
+            </li>
+            <li class="tours__slider-item swiper-slide">
+              <div class="tours__slide-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/tours/fisht-desktop.webp, img/tours/fisht-desktop@2x.webp 2x" width="1200"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours/fisht-tablet.webp, img/tours/fisht-tablet@2x.webp 2x" width="768"
+                    type="image/webp">
+                  <img width="320" height="416" srcset="img/tours/fisht-mobile.webp, img/tours/fisht-mobile@2x.webp 2x"
+                    src="img/tours/fisht-mobile.jpg" alt="фотография Фишт">
+                </picture>
+              </div>
+              <div class="tours__info">
+                <div class="tours__parameters">
+                  <a class="tours__place btn" href="#">
+                    <svg width="18" height="18">
+                      <use href="img/sprite.svg#point"></use>
+                    </svg>
+                    <span>Адыгея</span>
+                  </a>
+                  <div class="tours__duration">
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                      <p>7 дней</p>
+                    </div>
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <p>6 ночей</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>Через Фишт <br>к Чёрному морю и обратно</h3>
+                <div class="tours__parameters">
+                  <div class="tours__difficulty">
+                    <div class="tours__parameters-title">Сложность:</div>
+                    <div class="tours__parameters-data">
+                      <svg width="84" height="16">
+                        <use href="img/sprite.svg#four-stars"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="tours__timing">
+                    <div class="tours__parameters-title">Даты набора:</div>
+                    <div class="tours__parameters-data">15.07-19.07</div>
+                  </div>
+                  <div class="tours__group">
+                    <div class="tours__parameters-title">Группа:</div>
+                    <div class="tours__parameters-data">до 22 чел.</div>
+                  </div>
+                </div>
+            </li>
+            <li class="tours__slider-item swiper-slide">
+              <div class="tours__slide-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/tours/belukha-desktop.webp, img/tours/belukha-desktop@2x.webp 2x" width="1200"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours/belukha-tablet.webp, img/tours/belukha-tablet@2x.webp 2x" width="768"
+                    type="image/webp">
+                  <img width="320" height="416"
+                    srcset="img/tours/belukha-mobile.webp, img/tours/belukha-mobile@2x.webp 2x"
+                    src="img/tours/belukha-mobile.jpg" alt="фотография Белухи">
+                </picture>
+              </div>
+              <div class="tours__info">
+                <div class="tours__parameters">
+                  <a class="tours__place btn" href="#">
+                    <svg width="18" height="18">
+                      <use href="img/sprite.svg#point"></use>
+                    </svg>
+                    <span>Алтай
+                    </span>
+                  </a>
+                  <div class="tours__duration">
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                      <p>14 дней</p>
+                    </div>
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <p>13 ночей</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>Путь к подножию Белухи</h3>
+                <div class="tours__parameters">
+                  <div class="tours__difficulty">
+                    <div class="tours__parameters-title">Сложность:</div>
+                    <div class="tours__parameters-data">
+                      <svg width="84" height="16">
+                        <use href="img/sprite.svg#three-stars"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="tours__timing">
+                    <div class="tours__parameters-title">Даты набора:</div>
+                    <div class="tours__parameters-data">14.06-23.06</div>
+                  </div>
+                  <div class="tours__group">
+                    <div class="tours__parameters-title">Группа:</div>
+                    <div class="tours__parameters-data">до 25 чел.</div>
+                  </div>
+                </div>
+            </li>
+          </ul>
+        </div>
+        <div class="tours__show-all">
+        <a href="#">Показать все туры</a>
+        <svg width="7" height="12">
+          <use href="img/sprite.svg#all-tours-arrow"></use>
+        </svg>
+      </div>
+      </section>
+
+      <section class="" data-test="training">
+      </section>
+      <section class="" data-test="about">
+      </section>
+      <section class="" data-test="reviews">
+      </section>
+      <section class="" data-test="adv">
+      </section>
+      <section class="" data-test="gallery">
+      </section>
+      <section class="" data-test="form">
       </section>
     </main>
-    <footer>
+    <footer data-test="footer">
       <div class="container"></div>
     </footer>
   </div>

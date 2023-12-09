@@ -1,6 +1,8 @@
 .btn {
-  display: inline-flex;
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 34px;
 
   color: $color-default-white;
   font-weight: 500;
@@ -13,10 +15,6 @@
 
   transition: opacity $trans-default;
 
-  &--arrow {
-    padding: 12px;
-  }
-
   &:disabled {
     background-color: $color-disabled;
     pointer-events: none;
@@ -27,8 +25,25 @@
     background-color: $color-default-white;
   }
 
+  @include active {
+    color: $color-default-white;
+    background-color: $color-active;
+  }
+}
+
+.btn--arrow {
+  width: 37px;
+  height: 35px;
+  padding: 0;
+
+  @include hover-focus {
+    color: $color-active;
+    background-color: $color-default-white;
+    border: 1px solid $color-active;
+  }
 
   @include active {
+    color: $color-default-white;
     background-color: $color-active;
   }
 }

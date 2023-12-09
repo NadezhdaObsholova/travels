@@ -1,0 +1,130 @@
+.tours {
+  position: relative;
+  padding: 100px 120px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 53px 0 64px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.tours__header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  h2 {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    font-size: 35px;
+    font-weight: 800;
+    line-height: 35px;
+    margin: 0;
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+    }
+  }
+
+  span {
+    font-size: 55px;
+    font-weight: 800;
+    line-height: 55px;
+    z-index: -1;
+    opacity: 0.03;
+  }
+}
+
+.tous__controls {
+  display: flex;
+  gap: 4px;
+}
+
+.tours__info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: $color-default-white;
+  padding: 26px 20px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    max-width: 233px;
+    margin: 16px 0 30px;
+  }
+
+  .btn {
+    display: flex;
+    gap: 6px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 12px;
+    padding: 5px 12px;
+  }
+}
+
+.tours__parameters {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tours__duration {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  display: flex;
+  gap: 14px;
+  align-items: center;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    min-width: max-content;
+    gap: 12px;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+.tours__parameters-title {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+  padding-bottom: 6px;
+}
+
+.tours__parameters-data {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 13px;
+}
+
+.tours__show-all {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
