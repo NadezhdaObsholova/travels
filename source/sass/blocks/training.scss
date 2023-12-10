@@ -187,6 +187,7 @@
 .training__process-list {
   position: relative;
   display: grid;
+  row-gap: 50px;
   grid-template-columns: repeat(4, max-content);
   padding-left: 10px;
   margin-top: 10px;
@@ -204,8 +205,7 @@
   }
 }
 
-.training__process-item--pine-trees {
-
+.training__process-item:nth-child(4n) {
   grid-column: 3/4;
 
   @include vp-1199 {
@@ -214,7 +214,7 @@
   }
 }
 
-.training__process-item--mountain {
+.training__process-item:nth-child(4n+3) {
 
     grid-column: 4/5;
     grid-row: 1/2;
@@ -323,45 +323,6 @@
     height: 0;
   }
 }
-/*
-.training__process-item:nth-child(3n+3)::after {
-  @include vp-1199 {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 337px;
-    height: 2px;
-    background-color: $color-additional-20;
-    top: -21px;
-    left: 10px;
-  }
-
-  @include vp-767 {
-    width: 0;
-    height: 0;
-  }
-}
-*/
-/*
-.training__process-item:nth-child(3n+4)::after {
-
-  @include vp-1199 {
-    position: absolute;
-    content: "";
-    display: block;
-    width: 2px;
-    height: 56px;
-    background-color: $color-additional-20;
-    top: -75px;
-    left: 6px;
-  }
-
-  @include vp-767 {
-    width: 0;
-    height: 0;
-  }
-}
-*/
 
 .training__process-item:nth-child(4n+3)::after {
   @include vp-1199 {
