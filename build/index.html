@@ -233,16 +233,17 @@
             </button>
           </div>
         </div>
+
         <div class="tours__slider swiper" data-swiper="tours-slider">
           <ul class="tours__slider-list swiper-wrapper">
             <li class="tours__slider-item swiper-slide">
               <div class="tours__slide-img">
                 <picture>
                   <source media="(min-width: 1200px)"
-                    srcset="img/tours/elbrus-desktop.webp, img/tours/elbrus-desktop@2x.webp 2x" width="1200"
+                    srcset="img/tours/elbrus-desktop.webp, img/tours/elbrus-desktop@2x.webp 2x" width="380"
                     type="image/webp">
                   <source media="(min-width: 768px)"
-                    srcset="img/tours/elbrus-tablet.webp, img/tours/elbrus-tablet@2x.webp 2x" width="768"
+                    srcset="img/tours/elbrus-tablet.webp, img/tours/elbrus-tablet@2x.webp 2x" width="330"
                     type="image/webp">
                   <img width="320" height="416"
                     srcset="img/tours/elbrus-mobile.webp, img/tours/elbrus-mobile@2x.webp 2x"
@@ -297,10 +298,10 @@
               <div class="tours__slide-img">
                 <picture>
                   <source media="(min-width: 1200px)"
-                    srcset="img/tours/belukha-desktop.webp, img/tours/belukha-desktop@2x.webp 2x" width="1200"
+                    srcset="img/tours/belukha-desktop.webp, img/tours/belukha-desktop@2x.webp 2x" width="380"
                     type="image/webp">
                   <source media="(min-width: 768px)"
-                    srcset="img/tours/belukha-tablet.webp, img/tours/belukha-tablet@2x.webp 2x" width="768"
+                    srcset="img/tours/belukha-tablet.webp, img/tours/belukha-tablet@2x.webp 2x" width="330"
                     type="image/webp">
                   <img width="320" height="416"
                     srcset="img/tours/belukha-mobile.webp, img/tours/belukha-mobile@2x.webp 2x"
@@ -355,10 +356,10 @@
               <div class="tours__slide-img">
                 <picture>
                   <source media="(min-width: 1200px)"
-                    srcset="img/tours/fisht-desktop.webp, img/tours/fisht-desktop@2x.webp 2x" width="1200"
+                    srcset="img/tours/fisht-desktop.webp, img/tours/fisht-desktop@2x.webp 2x" width="380"
                     type="image/webp">
                   <source media="(min-width: 768px)"
-                    srcset="img/tours/fisht-tablet.webp, img/tours/fisht-tablet@2x.webp 2x" width="768"
+                    srcset="img/tours/fisht-tablet.webp, img/tours/fisht-tablet@2x.webp 2x" width="330"
                     type="image/webp">
                   <img width="320" height="416" srcset="img/tours/fisht-mobile.webp, img/tours/fisht-mobile@2x.webp 2x"
                     src="img/tours/fisht-mobile.jpg" alt="фотография Фишт">
@@ -411,10 +412,10 @@
               <div class="tours__slide-img">
                 <picture>
                   <source media="(min-width: 1200px)"
-                    srcset="img/tours/belukha-desktop.webp, img/tours/belukha-desktop@2x.webp 2x" width="1200"
+                    srcset="img/tours/belukha-desktop.webp, img/tours/belukha-desktop@2x.webp 2x" width="380"
                     type="image/webp">
                   <source media="(min-width: 768px)"
-                    srcset="img/tours/belukha-tablet.webp, img/tours/belukha-tablet@2x.webp 2x" width="768"
+                    srcset="img/tours/belukha-tablet.webp, img/tours/belukha-tablet@2x.webp 2x" width="330"
                     type="image/webp">
                   <img width="320" height="416"
                     srcset="img/tours/belukha-mobile.webp, img/tours/belukha-mobile@2x.webp 2x"
@@ -468,14 +469,199 @@
           </ul>
         </div>
         <div class="tours__show-all">
-        <a href="#">Показать все туры</a>
-        <svg width="7" height="12">
-          <use href="img/sprite.svg#all-tours-arrow"></use>
-        </svg>
-      </div>
+          <a href="#">Показать все туры</a>
+          <svg width="7" height="12">
+            <use href="img/sprite.svg#all-tours-arrow"></use>
+          </svg>
+        </div>
       </section>
 
-      <section class="" data-test="training">
+      <section class="training" data-test="training">
+        <div class="training__wrapper  container">
+          <div class="training__header">
+            <h2>Обучение</h2>
+            <span class="training__header-shadow">Обучение</span>
+          </div>
+          <div class="training__about">
+            <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
+              Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
+          </div>
+          <div class="training__header">
+            <h3>Наши инструкторы</h3>
+            <div class="training__controls">
+              <button class="training__button btn btn--arrow" data-button="training-button-prev">
+                <svg width="14" height="9">
+                  <use href="img/sprite.svg#btn-left"></use>
+                </svg>
+              </button>
+              <button class="training__button btn btn--arrow" data-button="training-button-next">
+                <svg width="14" height="9">
+                  <use href="img/sprite.svg#btn-right"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training__slider swiper" data-swiper="training-slider">
+            <ul class="training__slider-list swiper-wrapper">
+              <li class="training__slider-item swiper-slide">
+                <div class="training__slide-img">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/training/alexander-prokofiev-desktop.webp, img/training/alexander-prokofiev-desktop@2x.webp 2x"
+                      width="225" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/training/alexander-prokofiev-tablet.webp, img/training/alexander-prokofiev-tablet@2x.webp 2x"
+                      width="183" type="image/webp">
+                    <img width="290" height="200"
+                      srcset="img/training/alexander-prokofiev-mobile.webp, img/training/alexander-prokofiev-mobile@2x.webp 2x"
+                      src="img/training/alexander-prokofiev-mobile.jpg" alt="фотография инструктора">
+                  </picture>
+                </div>
+                <div class="training__info">
+                  <h4>Александр <br>Прокофьев</h4>
+                  <a class="training__sotial" href="#">
+                    <svg width="16" height="9">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                </div>
+              </li>
+              <li class="training__slider-item swiper-slide">
+                <div class="training__slide-img">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/training/svetlana-afinogenova-desktop.webp, img/training/svetlana-afinogenova-desktop@2x.webp 2x"
+                      width="225" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/training/svetlana-afinogenova-tablet.webp, img/training/svetlana-afinogenova-tablet@2x.webp 2x"
+                      width="183" type="image/webp">
+                    <img width="290" height="200"
+                      srcset="img/training/svetlana-afinogenova-mobile.webp, img/training/svetlana-afinogenova-mobile@2x.webp 2x"
+                      src="img/training/svetlana-afinogenova-mobile.jpg" alt="фотография инструктора">
+                  </picture>
+                </div>
+                <div class="training__info">
+                  <h4>Светлана <br>Афиногенова</h4>
+                  <a class="training__sotial" href="#">
+                    <svg width="16" height="9">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                  <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать —
+                    в этом назначение жизни.</p>
+                </div>
+              </li>
+              <li class="training__slider-item swiper-slide">
+                <div class="training__slide-img">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/training/nadezhda-kolesnichenko-desktop.webp, img/training/nadezhda-kolesnichenko-desktop@2x.webp 2x"
+                      width="225" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/training/nadezhda-kolesnichenko-tablet.webp, img/training/nadezhda-kolesnichenko-tablet@2x.webp 2x"
+                      width="183" type="image/webp">
+                    <img width="290" height="200"
+                      srcset="img/training/nadezhda-kolesnichenko-mobile.webp, img/training/nadezhda-kolesnichenko-mobile@2x.webp 2x"
+                      src="img/training/nadezhda-kolesnichenko-mobile.jpg" alt="фотография инструктора">
+                  </picture>
+                </div>
+                <div class="training__info">
+                  <h4>Надежда <br>Колесниченко</h4>
+                  <a class="training__sotial" href="#">
+                    <svg width="16" height="9">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                  <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь
+                    себя спокойно и уверенно.</p>
+                </div>
+              </li>
+              <li class="training__slider-item swiper-slide">
+                <div class="training__slide-img">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/training/fedor-kaigorodov-desktop.webp, img/training/fedor-kaigorodov-desktop@2x.webp 2x"
+                      width="225" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/training/fedor-kaigorodov-tablet.webp, img/training/fedor-kaigorodov-tablet@2x.webp 2x"
+                      width="183" type="image/webp">
+                    <img width="290" height="200"
+                      srcset="img/training/fedor-kaigorodov-mobile.webp, img/training/fedor-kaigorodov-mobile@2x.webp 2x"
+                      src="img/training/fedor-kaigorodov-mobile.jpg" alt="фотография инструктора">
+                  </picture>
+                </div>
+                <div class="training__info">
+                  <h4>Федор <br>Кайгородов</h4>
+                  <a class="training__sotial" href="#">
+                    <svg width="16" height="9">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                  <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                    путешествует по Европе.</p>
+                </div>
+              </li>
+              <li class="training__slider-item swiper-slide">
+                <div class="training__slide-img">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/training/svetlana-afinogenova-desktop.webp, img/training/svetlana-afinogenova-desktop@2x.webp 2x"
+                      width="225" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/training/svetlana-afinogenova-tablet.webp, img/training/svetlana-afinogenova-tablet@2x.webp 2x"
+                      width="183" type="image/webp">
+                    <img width="290" height="200"
+                      srcset="img/training/svetlana-afinogenova-mobile.webp, img/training/svetlana-afinogenova-mobile@2x.webp 2x"
+                      src="img/training/svetlana-afinogenova-mobile.jpg" alt="фотография инструктора">
+                  </picture>
+                </div>
+                <div class="training__info">
+                  <h4>Светлана <br>Афиногенова</h4>
+                  <a class="training__sotial" href="#">
+                    <svg width="16" height="9">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                  <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать —
+                    в этом назначение жизни.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="training__process container">
+          <h3>Процесс обучения</h3>
+          <ul class="training__process-list">
+            <li class="training__process-item">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#map"></use>
+              </svg>
+              <p>Изучение спортивного туристского движения</p>
+            </li>
+            <li class="training__process-item">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#boots"></use>
+              </svg>
+              <p>Подготовка <br class="desktop-only">и техническое снаряжение в походах</p>
+            </li>
+            <li class="training__process-item training__process-item--mountain">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#mountain"></use>
+              </svg>
+              <p>Разъяснение <br class="desktop-only">сложности горных препятствий</p>
+            </li>
+            <li class="training__process-item training__process-item--pine-trees">
+              <svg width="25" height="25">
+                <use href="img/sprite.svg#pine-trees"></use>
+              </svg>
+              <p>Лекции <br class="desktop-only">по окружающей среде, экологии и гигиене</p>
+            </li>
+          </ul>
+        </div>
+
+
       </section>
       <section class="" data-test="about">
       </section>
