@@ -25,7 +25,7 @@ const initTrainingSlider = () => {
         },
 
         350: {
-          initialSlide: 3,
+          initialSlide: 2,
           slidesPerView: 1,
         },
       },
