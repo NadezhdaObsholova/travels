@@ -217,7 +217,7 @@
     <main>
 
       <section class="tours container" data-test="tours">
-        <div class="tours__header">
+        <div class="tours__header block-header">
           <h2>Ближайшие туры</h2>
           <span class="tours__header-shadow">Ближайшие туры</span>
           <div class="tous__controls">
@@ -477,8 +477,21 @@
       </section>
 
       <section class="training" data-test="training">
-        <div class="training__wrapper  container">
-          <div class="training__header">
+        <div class="training__background">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/training/bkg/cloud-desktop.webp, img/training/bkg/cloud-desktop@2x.webp 2x" width="602"
+              type="image/webp">
+            <source media="(min-width: 768px)"
+              srcset="img/training/bkg/cloud-tablet.webp, img/training/bkg/cloud-tablet@2x.webp 2x" width="602"
+              type="image/webp">
+            <img width="171" height="595"
+              srcset="img/training/bkg/cloud-mobile.webp, img/training/bkg/cloud-mobile@2x.webp 2x"
+              src="img/training/bkg/cloud-mobile.png" alt="">
+          </picture>
+        </div>
+        <div class="training__wrapper container">
+          <div class="training__header block-header">
             <h2>Обучение</h2>
             <span class="training__header-shadow">Обучение</span>
           </div>
@@ -486,7 +499,7 @@
             <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов
               Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
           </div>
-          <div class="training__header">
+          <div class="training__slider-header">
             <h3>Наши инструкторы</h3>
             <div class="training__controls">
               <button class="training__button btn btn--arrow" data-button="training-button-prev">
@@ -630,7 +643,6 @@
             </ul>
           </div>
         </div>
-
         <div class="training__process container">
           <h3>Процесс обучения</h3>
           <ul class="training__process-list">
@@ -646,13 +658,13 @@
               </svg>
               <p>Подготовка <br class="desktop-only">и техническое снаряжение в походах</p>
             </li>
-            <li class="training__process-item training__process-item--mountain">
+            <li class="training__process-item">
               <svg width="25" height="25">
                 <use href="img/sprite.svg#mountain"></use>
               </svg>
               <p>Разъяснение <br class="desktop-only">сложности горных препятствий</p>
             </li>
-            <li class="training__process-item training__process-item--pine-trees">
+            <li class="training__process-item">
               <svg width="25" height="25">
                 <use href="img/sprite.svg#pine-trees"></use>
               </svg>
@@ -660,23 +672,47 @@
             </li>
           </ul>
         </div>
+      </section>
 
-
-      </section>
-      <section class="" data-test="about">
-      </section>
-      <section class="" data-test="reviews">
-      </section>
-      <section class="" data-test="adv">
-      </section>
-      <section class="" data-test="gallery">
-      </section>
-      <section class="" data-test="form">
-      </section>
-    </main>
-    <footer data-test="footer">
-      <div class="container"></div>
-    </footer>
+      <section class="about" data-test="about">
+        <div class="about__image">
+          <picture>
+            <source media="(min-width: 1200px)"
+              srcset="img/about/about-desktop.webp, img/about/about-desktop@2x.webp 2x" width="808" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/about/about-tablet.webp, img/about/about-tablet@2x.webp 2x"
+              width="542" type="image/webp">
+            <img width="808" height="474" srcset="img/about/about-mobile.webp, img/about/about-mobile@2x.webp 2x"
+              src="img/about/about-mobile.png" alt="фотография тура от компании">
+          </picture>
+        </div>
+        <div class="about__content">
+          <div class="about__header block-header">
+            <h2>О нас</h2>
+            <span class="about__header-shadow">О нас</span>
+          </div>
+          <h3>История компании</h3>
+          <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько
+            понравилось, что мы этим стали жить. <br class="desktop-only">Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать
+            людям удивительные места нашей страны.</p>
+          <h3>Наша цель</h3>
+          <p>Подарить вам незабываемые впечатления от похода в горы. Мы берём на себя все организационные вопросы.
+            При организации мы обязательно учтём все ваши пожелания. Вам останется только наслаждаться незабываемым
+            приключением в приятной компании.</p>
+        </div>
+  </div>
+  </section>
+  <section class="" data-test="reviews">
+  </section>
+  <section class="" data-test="adv">
+  </section>
+  <section class="" data-test="gallery">
+  </section>
+  <section class="" data-test="form">
+  </section>
+  </main>
+  <footer data-test="footer">
+    <div class="container"></div>
+  </footer>
   </div>
 
   <script src="js/vendor.min.js"></script>
