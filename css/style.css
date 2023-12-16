@@ -2969,6 +2969,9 @@ h2::after {
 .training img {
   width: 100%;
 }
+.training svg {
+  color: #2d383f;
+}
 
 .training__slider-header h3 {
   font-size: 21px;
@@ -3625,6 +3628,18 @@ h2::after {
   }
 }
 
+@media (max-width: 767px) {
+  .reviews .container {
+    padding: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .reviews h2 {
+    padding-left: 15px;
+  }
+}
+
 .reviews__controls {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3648,28 +3663,62 @@ h2::after {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
-  max-width: 700px;
+  width: 700px;
   height: auto;
   padding: 20px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
           box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
+}
+@media (max-width: 1199px) {
+  .reviews__slider-item {
+    width: 565px;
+  }
+}
+@media (max-width: 767px) {
+  .reviews__slider-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+    width: 320px;
+  }
 }
 .reviews__slider-item p {
   font-size: 14px;
   line-height: 22px;
   margin: 0;
 }
+@media (max-width: 1199px) {
+  .reviews__slider-item p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
 
 .reviews__personal-info p {
-  font-size: 13px;
-  line-height: 13px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 300;
   margin: 0;
 }
-.reviews__personal-info h4 {
+@media (max-width: 767px) {
+  .reviews__personal-info p {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+.reviews__personal-info h3 {
   margin: 8px 0;
   font-size: 13px;
   line-height: 13px;
   font-weight: 700;
+}
+@media (max-width: 767px) {
+  .reviews__personal-info h3 {
+    font-size: 12px;
+    line-height: 12px;
+  }
 }
 
 .reviews__slide-img {
@@ -3683,30 +3732,127 @@ h2::after {
   min-width: 258px;
   min-height: 100%;
 }
-
-h2 {
-  position: relative;
-}
-
-h2::after {
-  content: attr(data-header);
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  font-size: 55px;
-  font-weight: 800;
-  line-height: 55px;
-  z-index: -1;
-  opacity: 0.03;
-  min-width: -webkit-max-content;
-  min-width: -moz-max-content;
-  min-width: max-content;
+@media (max-width: 1199px) {
+  .reviews__slide-img img {
+    min-width: 186px;
+  }
 }
 @media (max-width: 767px) {
-  h2::after {
-    font-size: 26px;
-    line-height: 26px;
+  .reviews__slide-img img {
+    min-width: 280px;
   }
+}
+
+.adv__slider-header {
+  padding-left: 120px;
+}
+
+.adv__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 4px;
+  margin-top: 0;
+}
+
+.adv__slider-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .adv__slider-list {
+    gap: 15px;
+  }
+}
+
+.adv__slider-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 380px;
+  padding: 40px 20px;
+  height: auto;
+  border: 1px solid rgba(2, 102, 193, 0.2);
+}
+@media (max-width: 1199px) {
+  .adv__slider-item {
+    width: 324px;
+    padding: 30px 20px;
+  }
+}
+.adv__slider-item h3 {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+@media (max-width: 1199px) {
+  .adv__slider-item h3 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .adv__slider-item h3 {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+.adv__slider-item p {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+}
+@media (max-width: 767px) {
+  .adv__slider-item {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.adv__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 54px;
+  height: 54px;
+  border: 1px solid #0266c1;
+}
+@media (max-width: 1199px) {
+  .adv__icon {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 767px) {
+  .adv__icon {
+    width: 42px;
+    height: 42px;
+  }
+}
+.adv__icon svg {
+  color: #0266c1;
 }
 
 /* @mixin hover-focus {
