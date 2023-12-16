@@ -30,7 +30,8 @@ const initReviewsSlider = () => {
 
         320: {
           initialSlide: 0,
-          spaceBetween: 0,
+          spaceBetween: 30,
+          centeredSlides: true,
         },
       },
     });

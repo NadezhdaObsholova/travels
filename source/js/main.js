@@ -6,6 +6,7 @@ import {initHeroSlider} from './modules/slider/hero-slider';
 import {initToursSlider} from './modules/slider/tours-slider';
 import {initTrainingSlider} from './modules/slider/training-slider';
 import {initReviewsSlider} from './modules/slider/reviews-slider';
+import {initAdvsSlider} from './modules/slider/adv-slider';
 
 
 // ---------------------------------
@@ -25,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initToursSlider();
   initTrainingSlider();
   initReviewsSlider();
+  initAdvsSlider();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
