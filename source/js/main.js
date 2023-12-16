@@ -5,6 +5,7 @@ import {burgerMenu} from './modules/burger-menu';
 import {initHeroSlider} from './modules/slider/hero-slider';
 import {initToursSlider} from './modules/slider/tours-slider';
 import {initTrainingSlider} from './modules/slider/training-slider';
+import {initReviewsSlider} from './modules/slider/reviews-slider';
 
 
 // ---------------------------------
@@ -23,6 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initHeroSlider();
   initToursSlider();
   initTrainingSlider();
+  initReviewsSlider();
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
