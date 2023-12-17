@@ -23,6 +23,7 @@
   @include hover-focus {
     color: $color-active;
     background-color: $color-default-white;
+    outline: none;
   }
 
   @include active {

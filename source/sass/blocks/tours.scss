@@ -138,10 +138,40 @@
   letter-spacing: 0.64px;
   text-transform: uppercase;
   margin: 0 auto;
+  max-width: max-content;
 
   @include vp-767 {
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
   }
+
+
+  @include hover-focus {
+    outline: none;
+    a {
+      color: $color-active;
+    }
+    svg {
+     color: $color-active;
+    }
+  }
+
+  @include active {
+    a {
+      color: $color-additional-100;
+    }
+    svg {
+     color: $color-additional-100;
+    }
+  }
+
+  &.is-disabled {
+    color: $color-additional-100;
+    pointer-events: none;
+    svg {
+      color: $color-additional-20;
+     }
+  }
 }
+

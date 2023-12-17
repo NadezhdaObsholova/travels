@@ -116,24 +116,26 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 600;
-  min-width: max-content;
+  min-width: 145px;
 
   @include vp-1199 {
     font-size: 16px;
     line-height: 16px;
+    min-width: 129px;
   }
 
   @include vp-767 {
     grid-column: 2/3;
     font-size: 14px;
     line-height: 14px;
+    min-width: 113px;
   }
 }
 
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 31px;
+  gap: 21px;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -145,6 +147,20 @@
 
   a {
     color: $color-default-white;
+    padding: 5px;
+
+    @include hover {
+      border-bottom: 1px solid currentColor;
+    }
+
+    @include focus {
+      border: 1px solid currentColor;
+      outline: none;
+    }
+
+    @include active {
+      border: none;
+    }
 
     @include vp-1199 {
       color: $color-default-black;
@@ -172,5 +188,20 @@
 
   @include vp-767 {
     top: 100px;
+  }
+}
+
+
+.main-nav--footer {
+  position: relative;
+
+  .main-nav__wrapper {
+    background-color: $color-default-white;
+    color: $color-text-primary;
+    padding: 0;
+  }
+
+  a {
+    color: $color-text-primary;
   }
 }

@@ -4,9 +4,7 @@
     width: 100%;
   }
 
-  svg {
-    color: $color-text-primary;
-  }
+
 }
 
 .training__slider-header {
@@ -171,14 +169,21 @@
   }
 
   @include active {
-    color: $color-default-white;
+
     background-color: $color-additional-100;
     border: none;
+
+    svg {
+      color: $color-default-white;
+    }
   }
 
   &.is-disabled {
-    color: $color-text-primary-opacity-30;
     pointer-events: none;
+
+    svg {
+      color: $color-text-primary-opacity-30;
+    }
   }
 }
 
@@ -446,9 +451,11 @@
   z-index: -1;
   right: 0;
   top: 800px;
+
   @include vp-1199 {
     top: 1024px;
   }
+
   @include vp-767 {
     top: 678px;
   }

@@ -12,8 +12,11 @@
 
 .adv__controls {
   display: flex;
+  justify-content: center;
   gap: 4px;
-  margin-top: 0;
+  margin: 0;
+
+
 
   @include vp-1199 {
     display: none;
