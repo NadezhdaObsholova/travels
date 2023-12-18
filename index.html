@@ -292,6 +292,7 @@
                     <div class="tours__parameters-data">до 15 чел.</div>
                   </div>
                 </div>
+              </div>
             </li>
             <li class="tours__slider-item swiper-slide">
               <div class="tours__slide-img">
@@ -899,7 +900,6 @@
         </div>
       </section>
 
-
       <section class="gallery" data-test="gallery">
         <div class="gallery__wrapper">
 
@@ -1074,30 +1074,57 @@
         </div>
       </section>
     </main>
+
     <footer class="footer container" data-test="footer">
       <div class="footer__contacts-wrapper">
         <div class="footer__contacts">
-          <div class="footer__slider-header block-header">
+          <div class="footer__header block-header">
+
             <h2 data-header="Контакты">Контакты</h2>
             <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
               увлекательными историями и подобрать для вас тур.</p>
+          </div>
             <ul class="footer__contacts-list">
               <li class="footer__contacts-item">
+                <div class="footer__contacts-icon">
+                  <svg width="26" height="26">
+                    <use href="img/sprite.svg#phone"></use>
+                  </svg>
+                </div>
                 <h3>Телефон</h3>
                 <a href="tel:+79834754545">+7 983 745-45-45</a>
               </li>
               <li class="footer__contacts-item">
+                <div class="footer__contacts-icon">
+                  <svg width="26" height="26">
+                    <use href="img/sprite.svg#mail"></use>
+                  </svg>
+                </div>
                 <h3>Email</h3>
-                <p>info@lifetour.com</p>
+                <a href="mailto:info@lifetour.com">info@lifetour.com</a>
               </li>
               <li class="footer__contacts-item">
+                <div class="footer__contacts-icon">
+                  <svg width="26" height="26">
+                    <use href="img/sprite.svg#pin-stroke"></use>
+                  </svg>
+                </div>
                 <h3>Адрес</h3>
                 <p>г. Москва, пр-т Мира, д. 14, офис 101</p>
               </li>
             </ul>
-          </div>
+
         </div>
-        <div class="footer__map"></div>
+        <div class="footer__map">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/map/map-desktop.webp, img/map/map-desktop@2x.webp 2x"
+              width="585" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/map/map-tablet.webp, img/map/map-tablet@2x.webp 2x"
+              width="768" type="image/webp">
+            <img width="350" height="320" srcset="img/map/map-mobile.webp, img/map/map-mobile@2x.webp 2x"
+              src="img/map/map-mobile.jpg" alt="нахождение офиса компании на карте">
+          </picture>
+        </div>
       </div>
       <div class="footer__nav-wrapper">
         <div class="footer__nav main-nav main-nav--footer">
