@@ -280,3 +280,18 @@
 .swiper-pagination-bullet-active {
   background-color: $color-default-white;
 }
+
+.swiper-pagination-bullet {
+  @include focus {
+   outline: 1px solid $color-default-white-50;
+   outline-offset: 1px;
+  }
+
+  @include hover {
+    background-color: $color-default-white-50;
+   }
+
+   @include active {
+    background-color: $color-default-white-50;
+   }
+}
