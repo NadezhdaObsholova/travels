@@ -2,9 +2,9 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Огранизация походов в горы: Эльбрус, Кавказ, Урал, Камчатка">
   <title>LifeTour</title>
   <link rel="icon" href="favicon.ico">
@@ -27,13 +27,14 @@
 
 <body>
   <div class="wrapper">
-    <header class="header" data-set="hero">
 
-      <section class="header__nav main-nav">
+    <header class="header" data-test="hero">
+
+      <div class="header__nav main-nav">
 
         <div class="main-nav__wrapper">
           <button class="main-nav__toggle" type="button" aria-label="кнопка управления меню."></button>
-          <a class="main-nav__logo-link" href="index.html">
+          <a class="main-nav__logo-link" href="index.html" aria-label="логтип сайта">
             <svg width="142" height="42">
               <use href="img/sprite.svg#logo-header"></use>
             </svg>
@@ -43,13 +44,13 @@
             <li class="main-nav__item"><a href="#training">Обучение</a></li>
             <li class="main-nav__item"><a href="#about">О нас</a></li>
             <li class="main-nav__item"><a href="#reviews">Отзывы</a></li>
-            <li class="main-nav__item"><a href="#">Фотографии</a></li>
-            <li class="main-nav__item"><a href="#">Контакты</a></li>
+            <li class="main-nav__item"><a href="#gallery">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
           </ul>
           <a class="main-nav__phone" href="tel:+78005555555">8 800 725-32-32</a>
         </div>
 
-      </section>
+      </div>
 
       <section class="header__hero hero">
         <h1 class="visually-hidden">Сайт туристической компании LifeTour</h1>
@@ -66,13 +67,13 @@
                     type="image/webp">
                   <img width="362" height="568"
                     srcset="img/hero/caucasus-mobile.webp, img/hero/caucasus-mobile@2x.webp 2x"
-                    src="img/hero/caucasus-mobile.jpg" alt="фотография Кавказа">
+                    src="img/hero/caucasus-mobile.jpg" alt="фотография Кавказа" loading="lazy">
                 </picture>
               </div>
               <div class="hero__content container">
                 <h2>Захватывающие <br class="desktop-only">вершины Кавказа</h2>
                 <p>В сопровождении опытных гидов <br class="mobile-only">вы пройдёте <br class="tablet-only">через
-                  потрясающие ландшафты и совершите восход <br class="mobile-only"><br class="tablet-only">на вершину
+                  потрясающие ландшафты и совершите восход <br class="mobile-tablet">на вершину
                   горы Чегет.</p>
                 <button class="btn" type="button">Смотреть тур</button>
                 <div class="hero__media hero__media--video" data-video="hero-video">
@@ -93,7 +94,7 @@
                   </div>
                 </div>
                 <ul class="hero__parameters-list">
-                  <li class="hero__parameters-item hero__parameters--activity">
+                  <li class="hero__parameters-item">
                     <span>
                       <svg width="12" height="12">
                         <use href="img/sprite.svg#moon"></use>
@@ -101,7 +102,7 @@
                     </span>
                     <span>6 дней/5 ночей</span>
                   </li>
-                  <li class="hero__parameters-item hero__parameters--complexity">
+                  <li class="hero__parameters-item">
                     <span>
                       <svg width="12" height="12">
                         <use href="img/sprite.svg#level"></use>
@@ -123,7 +124,7 @@
                     type="image/webp">
                   <img width="362" height="568"
                     srcset="img/hero/kamchatka-mobile.webp, img/hero/kamchatka-mobile@2x.webp 2x"
-                    src="img/hero/kamchatka-mobile.jpg" alt="фотография Кавказа">
+                    src="img/hero/kamchatka-mobile.jpg" alt="фотография Камчатки" loading="lazy">
                 </picture>
               </div>
               <div class="hero__content container">
@@ -137,12 +138,12 @@
                       srcset="img/hero/photos-desktop.webp, img/hero/photos-desktop@2x.webp 2x" width="442" height="365"
                       type="image/webp">
                     <img width="442" height="365"
-                      srcset="img/hero/photos-tablet.webp, img/hero/photos_tablet@2x.webp 2x"
+                      srcset="img/hero/photos-tablet.webp, img/hero/photos-tablet@2x.webp 2x"
                       src="img/hero/photos-tablet.png" alt="тур по Камчатке">
                   </picture>
                 </div>
                 <ul class="hero__parameters-list">
-                  <li class="hero__parameters-item hero__parameters--activity">
+                  <li class="hero__parameters-item">
                     <span>
                       <svg width="12" height="12">
                         <use href="img/sprite.svg#moon"></use>
@@ -150,7 +151,7 @@
                     </span>
                     <span>9 дней/10 ночей</span>
                   </li>
-                  <li class="hero__parameters-item hero__parameters--complexity">
+                  <li class="hero__parameters-item ">
                     <span>
                       <svg width="12" height="12">
                         <use href="img/sprite.svg#level"></use>
@@ -170,7 +171,7 @@
                   <source media="(min-width: 768px)"
                     srcset="img/hero/altai-tablet.webp, img/hero/altai-tablet@2x.webp 2x" width="768" type="image/webp">
                   <img width="362" height="568" srcset="img/hero/altai-mobile.webp, img/hero/altai-mobile@2x.webp 2x"
-                    src="img/hero/altai-mobile.jpg" alt="фотография Кавказа">
+                    src="img/hero/altai-mobile.jpg" alt="фотография Алтая" loading="lazy">
                 </picture>
               </div>
               <div class="hero__content container">
@@ -179,13 +180,11 @@
                   дух ландшафтов Алтайских гор.</p>
                 <button class="btn" type="button">Смотреть тур</button>
                 <div class="hero__media hero__media--audio">
-                  <iframe frameborder="0" style="border:none;width:100%;height:210px;" width="100%" height="210"
-                    src="https://music.yandex.ru/iframe/track/112912322/25474374">Слушайте <a
-                      href='https://music.yandex.ru/album/25474374/track/112912322'>001. Конец фронтенда, одинаковые
-                      фреймворки и логические свойства</a> на Яндекс Музыке</iframe>
+                  <iframe width="340" height="210" title="подкаст про код"
+                    src="https://music.yandex.ru/iframe/track/112912322/25474374" loading="lazy"></iframe>
                 </div>
                 <ul class="hero__parameters-list">
-                  <li class="hero__parameters-item hero__parameters--activity">
+                  <li class="hero__parameters-item">
                     <span>
                       <svg width="12" height="12">
                         <use href="img/sprite.svg#moon"></use>
@@ -193,7 +192,7 @@
                     </span>
                     <span>8 дней/7 ночей</span>
                   </li>
-                  <li class="hero__parameters-item hero__parameters--complexity">
+                  <li class="hero__parameters-item">
                     <span>
                       <svg width="12" height="12">
                         <use href="img/sprite.svg#level"></use>
@@ -206,26 +205,25 @@
             </li>
           </ul>
           <div class="hero__pagination swiper-pagination" data-pagination="hero-pagination">
-            <div class="hero__pagination-bullet" aria-label="1 слайд"></div>
-            <div class="hero__pagination-bullet" aria-label="2 слайд"></div>
-            <div class="hero__pagination-bullet" aria-label="3 слайд"></div>
+            <div class="hero__pagination-bullet"></div>
+            <div class="hero__pagination-bullet"></div>
+            <div class="hero__pagination-bullet"></div>
           </div>
         </div>
       </section>
     </header>
 
     <main>
-
       <section class="tours container" id="tours" data-test="tours">
         <div class="tours__header block-header">
           <h2 data-header="Ближайшие туры">Ближайшие туры</h2>
-          <div class="tous__controls">
-            <button class="tours__button btn btn--arrow" data-button="tours-button-prev">
+          <div class="tours__controls">
+            <button class="tours__button btn btn--arrow" data-button="tours-button-prev" type="button" aria-label="предыдущий слайд">
               <svg width="14" height="9">
                 <use href="img/sprite.svg#btn-left"></use>
               </svg>
             </button>
-            <button class="tours__button btn btn--arrow" data-button="tours-button-next">
+            <button class="tours__button btn btn--arrow" data-button="tours-button-next" type="button" aria-label="следующий слайд">
               <svg width="14" height="9">
                 <use href="img/sprite.svg#btn-right"></use>
               </svg>
@@ -351,6 +349,7 @@
                     <div class="tours__parameters-data">до 25 чел.</div>
                   </div>
                 </div>
+              </div>
             </li>
             <li class="tours__slider-item swiper-slide">
               <div class="tours__slide-img">
@@ -407,6 +406,66 @@
                     <div class="tours__parameters-data">до 22 чел.</div>
                   </div>
                 </div>
+              </div>
+            </li>
+            <li class="tours__slider-item swiper-slide">
+              <div class="tours__slide-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/tours/elbrus-desktop.webp, img/tours/elbrus-desktop@2x.webp 2x" width="380"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours/elbrus-tablet.webp, img/tours/elbrus-tablet@2x.webp 2x" width="330"
+                    type="image/webp">
+                  <img width="320" height="416"
+                    srcset="img/tours/elbrus-mobile.webp, img/tours/elbrus-mobile@2x.webp 2x"
+                    src="img/tours/elbrus-mobile.jpg" alt="фотография Кавказа">
+                </picture>
+              </div>
+              <div class="tours__info">
+                <div class="tours__parameters">
+                  <a class="tours__place btn" href="#">
+                    <svg width="18" height="18">
+                      <use href="img/sprite.svg#point"></use>
+                    </svg>
+                    <span>Кавказ
+                    </span>
+                  </a>
+                  <div class="tours__duration">
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                      <p>4 дня</p>
+                    </div>
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <p>3 ночи</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>Путешествие вокруг Эльбруса</h3>
+                <div class="tours__parameters">
+                  <div class="tours__difficulty">
+                    <div class="tours__parameters-title">Сложность:</div>
+                    <div class="tours__parameters-data">
+                      <svg width="84" height="16">
+                        <use href="img/sprite.svg#four-stars"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="tours__timing">
+                    <div class="tours__parameters-title">Даты набора:</div>
+                    <div class="tours__parameters-data">12.06-19.06</div>
+                  </div>
+                  <div class="tours__group">
+                    <div class="tours__parameters-title">Группа:</div>
+                    <div class="tours__parameters-data">до 15 чел.</div>
+                  </div>
+                </div>
+              </div>
             </li>
             <li class="tours__slider-item swiper-slide">
               <div class="tours__slide-img">
@@ -465,6 +524,64 @@
                     <div class="tours__parameters-data">до 25 чел.</div>
                   </div>
                 </div>
+              </div>
+            </li>
+            <li class="tours__slider-item swiper-slide">
+              <div class="tours__slide-img">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/tours/fisht-desktop.webp, img/tours/fisht-desktop@2x.webp 2x" width="380"
+                    type="image/webp">
+                  <source media="(min-width: 768px)"
+                    srcset="img/tours/fisht-tablet.webp, img/tours/fisht-tablet@2x.webp 2x" width="330"
+                    type="image/webp">
+                  <img width="320" height="416" srcset="img/tours/fisht-mobile.webp, img/tours/fisht-mobile@2x.webp 2x"
+                    src="img/tours/fisht-mobile.jpg" alt="фотография Фишт">
+                </picture>
+              </div>
+              <div class="tours__info">
+                <div class="tours__parameters">
+                  <a class="tours__place btn" href="#">
+                    <svg width="18" height="18">
+                      <use href="img/sprite.svg#point"></use>
+                    </svg>
+                    <span>Адыгея</span>
+                  </a>
+                  <div class="tours__duration">
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#sun"></use>
+                      </svg>
+                      <p>7 дней</p>
+                    </div>
+                    <div>
+                      <svg width="20" height="20">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <p>6 ночей</p>
+                    </div>
+                  </div>
+                </div>
+                <h3>Через Фишт <br>к Чёрному морю и обратно</h3>
+                <div class="tours__parameters">
+                  <div class="tours__difficulty">
+                    <div class="tours__parameters-title">Сложность:</div>
+                    <div class="tours__parameters-data">
+                      <svg width="84" height="16">
+                        <use href="img/sprite.svg#four-stars"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="tours__timing">
+                    <div class="tours__parameters-title">Даты набора:</div>
+                    <div class="tours__parameters-data">15.07-19.07</div>
+                  </div>
+                  <div class="tours__group">
+                    <div class="tours__parameters-title">Группа:</div>
+                    <div class="tours__parameters-data">до 22 чел.</div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -475,7 +592,6 @@
           </svg>
         </div>
       </section>
-
       <section class="training" id="training" data-test="training">
         <div class="training__background">
           <picture>
@@ -501,12 +617,12 @@
           <div class="training__slider-header">
             <h3>Наши инструкторы</h3>
             <div class="training__controls">
-              <button class="training__button btn btn--arrow" data-button="training-button-prev">
+              <button class="training__button btn btn--arrow" data-button="training-button-prev" type="button" aria-label="предыдцщий слайд">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#btn-left"></use>
                 </svg>
               </button>
-              <button class="training__button btn btn--arrow" data-button="training-button-next">
+              <button class="training__button btn btn--arrow" data-button="training-button-next" type="button" aria-label="следующий слайд">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#btn-right"></use>
                 </svg>
@@ -515,6 +631,31 @@
           </div>
           <div class="training__slider swiper" data-swiper="training-slider">
             <ul class="training__slider-list swiper-wrapper">
+              <li class="training__slider-item swiper-slide">
+                <div class="training__slide-img">
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="img/training/fedor-kaigorodov-desktop.webp, img/training/fedor-kaigorodov-desktop@2x.webp 2x"
+                      width="225" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="img/training/fedor-kaigorodov-tablet.webp, img/training/fedor-kaigorodov-tablet@2x.webp 2x"
+                      width="183" type="image/webp">
+                    <img width="290" height="200"
+                      srcset="img/training/fedor-kaigorodov-mobile.webp, img/training/fedor-kaigorodov-mobile@2x.webp 2x"
+                      src="img/training/fedor-kaigorodov-mobile.jpg" alt="фотография инструктора">
+                  </picture>
+                </div>
+                <div class="training__info">
+                  <h4>Федор <br>Кайгородов</h4>
+                  <a class="training__sotial" href="#" aria-label="ссылка на страницу vk">
+                    <svg width="16" height="9">
+                      <use href="img/sprite.svg#vk"></use>
+                    </svg>
+                  </a>
+                  <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много
+                    путешествует по Европе.</p>
+                </div>
+              </li>
               <li class="training__slider-item swiper-slide">
                 <div class="training__slide-img">
                   <picture>
@@ -531,7 +672,7 @@
                 </div>
                 <div class="training__info">
                   <h4>Александр <br>Прокофьев</h4>
-                  <a class="training__sotial" href="#">
+                  <a class="training__sotial" href="#" aria-label="ссылка на страницу vk">
                     <svg width="16" height="9">
                       <use href="img/sprite.svg#vk"></use>
                     </svg>
@@ -555,7 +696,7 @@
                 </div>
                 <div class="training__info">
                   <h4>Светлана <br>Афиногенова</h4>
-                  <a class="training__sotial" href="#">
+                  <a class="training__sotial" href="#" aria-label="ссылка на страницу vk">
                     <svg width="16" height="9">
                       <use href="img/sprite.svg#vk"></use>
                     </svg>
@@ -580,7 +721,7 @@
                 </div>
                 <div class="training__info">
                   <h4>Надежда <br>Колесниченко</h4>
-                  <a class="training__sotial" href="#">
+                  <a class="training__sotial" href="#" aria-label="ссылка на страницу vk">
                     <svg width="16" height="9">
                       <use href="img/sprite.svg#vk"></use>
                     </svg>
@@ -605,7 +746,7 @@
                 </div>
                 <div class="training__info">
                   <h4>Федор <br>Кайгородов</h4>
-                  <a class="training__sotial" href="#">
+                  <a class="training__sotial" href="#" aria-label="ссылка на страницу vk">
                     <svg width="16" height="9">
                       <use href="img/sprite.svg#vk"></use>
                     </svg>
@@ -614,31 +755,7 @@
                     путешествует по Европе.</p>
                 </div>
               </li>
-              <li class="training__slider-item swiper-slide">
-                <div class="training__slide-img">
-                  <picture>
-                    <source media="(min-width: 1200px)"
-                      srcset="img/training/svetlana-afinogenova-desktop.webp, img/training/svetlana-afinogenova-desktop@2x.webp 2x"
-                      width="225" type="image/webp">
-                    <source media="(min-width: 768px)"
-                      srcset="img/training/svetlana-afinogenova-tablet.webp, img/training/svetlana-afinogenova-tablet@2x.webp 2x"
-                      width="183" type="image/webp">
-                    <img width="290" height="200"
-                      srcset="img/training/svetlana-afinogenova-mobile.webp, img/training/svetlana-afinogenova-mobile@2x.webp 2x"
-                      src="img/training/svetlana-afinogenova-mobile.jpg" alt="фотография инструктора">
-                  </picture>
-                </div>
-                <div class="training__info">
-                  <h4>Светлана <br>Афиногенова</h4>
-                  <a class="training__sotial" href="#">
-                    <svg width="16" height="9">
-                      <use href="img/sprite.svg#vk"></use>
-                    </svg>
-                  </a>
-                  <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать —
-                    в этом назначение жизни.</p>
-                </div>
-              </li>
+ 
             </ul>
           </div>
         </div>
@@ -672,7 +789,6 @@
           </ul>
         </div>
       </section>
-
       <section class="about" id="about" data-test="about">
         <div class="about__image">
           <picture>
@@ -699,19 +815,18 @@
             приключением в приятной компании.</p>
         </div>
       </section>
-
       <section class="reviews" id="reviews" data-test="reviews">
         <div class="reviews__wrapper container">
 
           <div class="reviews__slider-header block-header">
             <h2 data-header="Отзывы">Отзывы</h2>
             <div class="reviews__controls">
-              <button class="reviews__button btn btn--arrow" data-button="reviews-button-prev">
+              <button class="reviews__button btn btn--arrow" data-button="reviews-button-prev" type="button" aria-label="предыдущий слайд">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#btn-left"></use>
                 </svg>
               </button>
-              <button class="reviews__button btn btn--arrow" data-button="reviews-button-next">
+              <button class="reviews__button btn btn--arrow" data-button="reviews-button-next" type="button" aria-label="следующий слайд">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#btn-right"></use>
                 </svg>
@@ -730,11 +845,9 @@
                 </div>
                 <div class="reviews__info">
                   <div class="reviews__content">
-                    <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы – настоящие
-                      эксперты – всему научили, все показали. Делились увлекательными историями о местах, людях,
+                    <p>Осенью ходили в поход на Алтай с друзьями. Впечатления потрясающие! Инструкторы — настоящие эксперты — всему научили, <br class="desktop-only">все показали. Делились увлекательными историями о местах, людях,
                       культуре места.</p>
-                    <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Еще никогда не отдыхал
-                      так душой и телом. Всем очень рекомендую! </p>
+                    <p>С уверенностью могу сказать, что жизнь разделилась на до этого и после. Еще никогда не отдыхал так душой и телом. Всем очень рекомендую!</p>
                   </div>
                   <div class="reviews__personal-info">
                     <h3>Фролов Александр</h3>
@@ -747,12 +860,12 @@
                   <picture>
                     <img width="280" height="169"
                       srcset="img/reviews/solovjov-ivan.webp, img/reviews/solovjov-ivan@2x.webp 2x"
-                      src="img/reviews/solovjov-ivan.jpg" alt="фотграфия пользователя">
+                      src="img/reviews/solovjov-ivan.jpg" alt="фотография пользователя">
                   </picture>
                 </div>
                 <div class="reviews__info">
                   <div class="reviews__content">
-                    <p>Хороший полноценный поход с разнообразными локациями. В начале дорога идет по лыжне, далее прошли
+                    <p>Хороший полноценный поход <br class="desktop-only">с разнообразными локациями. В начале дорога идет по лыжне, далее прошли
                       мимо полигона, по болотам, у озер и лесных ручьев, остатков дач конца 19 века.
                       Было очень интересно!</p>
                     <p>Инструктор Федор дружелюбный, внимательный к технике безопасности и своим туристам.
@@ -769,14 +882,12 @@
                   <picture>
                     <img width="280" height="169"
                       srcset="img/reviews/bazhenova-eugenia.webp, img/reviews/bazhenova-eugenia@2x.webp 2x"
-                      src="img/reviews/bazhenova-eugenia.jpg" alt="фотграфия пользователя">
+                      src="img/reviews/bazhenova-eugenia.jpg" alt="фотография пользователя">
                   </picture>
                 </div>
                 <div class="reviews__info">
                   <div class="reviews__content">
-                    <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала
-                      на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошел легче,
-                      чем ожидала, видимо организм уже привык.</p>
+                    <p>Ранее не ходила на такие длинные дистанции. В первый день прошли около 30 км, физически я устала на 18 км, поэтому не была уверена, пройду ли до конца. Но я справилась. Второй день прошел легче, чем ожидала, видимо организм уже привык.</p>
                     <p>Спасибо ребятам, инструкторам за помощь и поддержку! Я была рада быть в такой компании.</p>
                   </div>
                   <div class="reviews__personal-info">
@@ -790,18 +901,16 @@
                   <picture>
                     <img width="280" height="169"
                       srcset="img/reviews/pirogova-elena.webp, img/reviews/pirogova-elena@2x.webp 2x"
-                      src="img/reviews/pirogova-elena.jpg" alt="фотграфия пользователя">
+                      src="img/reviews/pirogova-elena.jpg" alt="фотография пользователя">
                   </picture>
                 </div>
                 <div class="reviews__info">
                   <div class="reviews__content">
-                    <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает,
-                      когда наконец-то, преодолев все трудности и препятствия, взбираешься на вершину. </p>
-                    <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у
-                      костра и пели песни. Обязательно повторю такое приключение!</p>
+                    <p>Это был опыт, изменивший мою жизнь! Думала, не справлюсь, но все получилось! Дух захватывает, когда наконец-то, преодолев все трудности и препятствия, взбираешься на вершину.</p>
+                    <p>У нас собралась потрясающая команда. Все друг друга поддерживали, по вечерам мы сидели вместе у костра и пели песни. Обязательно повторю такое приключение!</p>
                   </div>
                   <div class="reviews__personal-info">
-                    <h3>Елена Пирогова</h>
+                    <h3>Елена Пирогова</h3>
                       <p>37 лет, Тюмень</p>
                   </div>
                 </div>
@@ -810,7 +919,6 @@
           </div>
         </div>
       </section>
-
       <section class="adv" data-test="adv">
         <div class="adv__wrapper">
           <div class="adv__slider-header block-header">
@@ -826,22 +934,18 @@
                 </div>
                 <div class="adv__info">
                   <h3>Безопасность</h3>
-                  <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем
-                    планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время
-                    всего тура.</p>
+                  <p>Уделяем внимание безопасности клиентов, внедряя строгие процедуры и протоколы безопасности. Имеем планы действий на случай непредвиденных обстоятельств и даём гарантию полной безопасности во время всего тура.</p>
                 </div>
               </li>
               <li class="adv__slider-item swiper-slide">
                 <div class="adv__icon">
                   <svg width="24" height="24">
-                    <use href="img/sprite.svg#crown "></use>
+                    <use href="img/sprite.svg#crown"></use>
                   </svg>
                 </div>
                 <div class="adv__info">
                   <h3>Экспертиза и знания</h3>
-                  <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике
-                    безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере
-                    насладиться опытом без опасений.</p>
+                  <p>Наша команда опытных гидов имеет обширные знания о местности, погодных условиях и технике безопасности. Это гарантирует, что наши клиенты находятся в надёжных руках и могут в полной мере насладиться опытом без опасений.</p>
                 </div>
               </li>
               <li class="adv__slider-item swiper-slide">
@@ -852,9 +956,7 @@
                 </div>
                 <div class="adv__info">
                   <h3>Оборудование и снаряжение</h3>
-                  <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет
-                    клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным
-                    и экономически выгодным.</p>
+                  <p>Мы предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от необходимости покупать, брать с собой снаряжение, что делает путешествие более удобным и экономически выгодным.</p>
                 </div>
               </li>
               <li class="adv__slider-item swiper-slide">
@@ -865,9 +967,7 @@
                 </div>
                 <div class="adv__info">
                   <h3>Индивидуальные маршруты</h3>
-                  <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем
-                    адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили
-                    индивидуальный опыт.</p>
+                  <p>Предлагаем широкий выбор туров, отвечающих различным уровням мастерства и интересам. Мы также можем адаптировать маршруты к вашим конкретным потребностям и предпочтениям, чтобы вы получили индивидуальный опыт.</p>
                 </div>
               </li>
               <li class="adv__slider-item swiper-slide">
@@ -878,20 +978,18 @@
                 </div>
                 <div class="adv__info">
                   <h3>Бережное отношение к природе</h3>
-                  <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают
-                    минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».
-                  </p>
+                  <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
                 </div>
               </li>
             </ul>
           </div>
           <div class="adv__controls">
-            <button class="adv__button btn btn--arrow" data-button="adv-button-prev">
+            <button class="adv__button btn btn--arrow" data-button="adv-button-prev" type="button" aria-label="предыдущий слайд">
               <svg width="14" height="9">
                 <use href="img/sprite.svg#btn-left"></use>
               </svg>
             </button>
-            <button class="adv__button btn btn--arrow" data-button="adv-button-next">
+            <button class="adv__button btn btn--arrow" data-button="adv-button-next" type="button" aria-label="следующий слайд">
               <svg width="14" height="9">
                 <use href="img/sprite.svg#btn-right"></use>
               </svg>
@@ -899,7 +997,6 @@
           </div>
         </div>
       </section>
-
       <section class="gallery" data-test="gallery">
         <div class="gallery__wrapper">
 
@@ -911,12 +1008,12 @@
               а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего
               сайта.</p>
             <div class="gallery__controls">
-              <button class="gallery__button btn btn--arrow" data-button="gallery-button-prev">
+              <button class="gallery__button btn btn--arrow" data-button="gallery-button-prev" type="button" aria-label="предыдущий слайд">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#btn-left"></use>
                 </svg>
               </button>
-              <button class="gallery__button btn btn--arrow" data-button="gallery-button-next">
+              <button class="gallery__button btn btn--arrow" data-button="gallery-button-next" type="button" aria-label="следующий слайд">
                 <svg width="14" height="9">
                   <use href="img/sprite.svg#btn-right"></use>
                 </svg>
@@ -1040,7 +1137,6 @@
           </div>
         </div>
       </section>
-
       <section class="form" data-test="form">
         <div class="form__bkg">
           <picture>
@@ -1052,11 +1148,13 @@
               src="img/form/form-mobile.jpg" alt="">
           </picture>
         </div>
-        <div class="form__wrapper" data-form-node data-form-validate data-callback="base">
-          <h2 class="form__header">Остались вопросы?</h2>
+        <div class="form__wrapper" data-form-validate data-callback="base">
+
+          <h2>Остались вопросы?</h2>
           <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
           <form class="form__holder" method="post" action="https://echo.htmlacademy.ru">
             <div class="form__content">
+
               <div class="form__item phone-wrapper" data-validate-type="phone" data-message-base="Обязательное поле"
                 data-message-extra="Введите 10 цифр" data-required data-on-input-validate>
                 <input class="form__input" type="tel" name="phone" placeholder="Телефон" aria-label="Телефон" required
@@ -1065,7 +1163,7 @@
 
               <div class="form__item email-wrapper" data-validate-type="email" data-limitation="email"
                 data-message-base="Обязательное поле" data-required data-on-input-validate>
-                <input class="form__input" type="email" name="email" id="email" placeholder="Email" required>
+                <input class="form__input" type="email" name="email" id="email" placeholder="Email" aria-label="Email" required>
               </div>
 
               <button class="btn" type="submit">Отправить</button>
@@ -1084,7 +1182,7 @@
             <p>Свяжитесь с нами любым удобным для вас способом или приходите к нам в гости. Мы будем рады поделиться
               увлекательными историями и подобрать для вас тур.</p>
           </div>
-            <ul class="footer__contacts-list">
+            <ul class="footer__contacts-list" id="contacts">
               <li class="footer__contacts-item">
                 <div class="footer__contacts-icon">
                   <svg width="26" height="26">
@@ -1130,7 +1228,7 @@
         <div class="footer__nav main-nav main-nav--footer">
           <div class="main-nav__wrapper">
             <button class="main-nav__toggle" type="button" aria-label="кнопка управления меню."></button>
-            <a class="main-nav__logo-link" href="index.html">
+            <a class="main-nav__logo-link" href="index.html" aria-label="логтип компании">
               <svg width="142" height="42">
                 <use href="img/sprite.svg#logo-header"></use>
               </svg>
@@ -1140,13 +1238,30 @@
               <li class="main-nav__item"><a href="#training">Обучение</a></li>
               <li class="main-nav__item"><a href="#about">О нас</a></li>
               <li class="main-nav__item"><a href="#reviews">Отзывы</a></li>
-              <li class="main-nav__item"><a href="#">Фотографии</a></li>
-              <li class="main-nav__item"><a href="#">Контакты</a></li>
+              <li class="main-nav__item"><a href="#gallery">Фотографии</a></li>
+              <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
             </ul>
             <a class="main-nav__phone" href="tel:+78005555555">8 800 725-32-32</a>
           </div>
         </div>
-        <div class="footer__sotial"></div>
+        <div class="footer__sotial">
+          <a class="footer__sotial-link footer__sotial-link--vk" href="#" aria-label="страница компании в vk">
+            <svg width="16" height="9">
+              <use href="img/sprite.svg#vk"></use>
+            </svg>
+          </a>
+          <a class="footer__sotial-link footer__sotial-link--odnoklassniki" href="#" aria-label="страница компании в одноклассниках">
+            <svg width="9" height="16">
+              <use href="img/sprite.svg#odnoklassniki"></use>
+            </svg>
+          </a>
+          <a class="footer__sotial-link footer__sotial-link--reddit" href="#" aria-label="страница компании в reddit">
+            <svg width="14" height="15">
+              <use href="img/sprite.svg#reddit"></use>
+            </svg>
+          </a>
+        </div>
+        <p>Политика конфиденциальности</p>
       </div>
     </footer>
   </div>

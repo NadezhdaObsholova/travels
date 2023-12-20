@@ -1474,6 +1474,15 @@ button,
   }
 }
 
+.mobile-tablet {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .mobile-tablet {
+    display: block;
+  }
+}
+
 .block-header {
   position: relative;
   display: -webkit-box;
@@ -2301,8 +2310,8 @@ h2::after {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    padding: 15px;
-    row-gap: 8px;
+    padding: 15px 15px 12px;
+    row-gap: 7px;
   }
 }
 
@@ -2354,6 +2363,7 @@ h2::after {
 .main-nav__logo-link {
   padding-left: 31px;
   padding-right: 31px;
+  padding-top: 6px;
   color: #ffffff;
   cursor: default;
 }
@@ -2403,6 +2413,7 @@ h2::after {
   line-height: 18px;
   font-weight: 600;
   min-width: 145px;
+  padding-top: 3px;
 }
 @media (max-width: 1199px) {
   .main-nav__phone {
@@ -2544,6 +2555,7 @@ h2::after {
     display: flex;
     font-size: 14px;
     line-height: 14px;
+    gap: 18px;
   }
 }
 @media (max-width: 767px) {
@@ -2561,12 +2573,16 @@ h2::after {
     justify-items: center;
   }
 }
-.main-nav--footer .main-nav__phone,
 .main-nav--footer .main-nav__toggle {
   display: none;
 }
 .main-nav--footer .main-nav__logo-link {
   padding: 0;
+}
+@media (max-width: 1199px) {
+  .main-nav--footer .main-nav__phone {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .main-nav--footer .main-nav__item {
@@ -2770,6 +2786,7 @@ h2::after {
 .hero__media--audio {
   width: 340px;
   height: 220px;
+  border: 0;
 }
 @media (max-width: 1199px) {
   .hero__media--audio {
@@ -2804,6 +2821,10 @@ h2::after {
   border: 1px solid #ffffff;
   border-radius: 50%;
   padding-left: 5px;
+}
+.hero__media-button svg {
+  width: 14px;
+  height: 26px;
 }
 .hero__media-button path {
   fill: #ffffff;
@@ -2882,6 +2903,10 @@ h2::after {
   padding: 14px 19px;
   border: 1px solid #ffffff;
 }
+.hero__parameters-item svg {
+  width: 12px;
+  height: 12px;
+}
 
 .swiper-horizontal > .swiper-pagination-bullets {
   position: absolute;
@@ -2947,19 +2972,19 @@ h2::after {
 .tours {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 100px;
+  padding-bottom: 109px;
   overflow: hidden;
 }
 @media (max-width: 1199px) {
   .tours {
     padding-top: 65px;
-    padding-bottom: 45px;
+    padding-bottom: 54px;
   }
 }
 @media (max-width: 767px) {
   .tours {
     padding-top: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 29px;
     width: 350px;
   }
 }
@@ -2975,11 +3000,15 @@ h2::after {
 }
 @media (max-width: 767px) {
   .tours ul {
-    margin-top: 25px;
+    margin-top: 22px;
   }
 }
 .tours img {
   width: 100%;
+}
+.tours h2::after {
+  font-size: 55px;
+  line-height: 55px;
 }
 
 @media (max-width: 767px) {
@@ -2991,22 +3020,22 @@ h2::after {
 }
 .tours__header h2 {
   margin: 0;
-  padding-top: 3px;
 }
 @media (max-width: 767px) {
   .tours__header h2 {
     font-size: 22px;
     line-height: 22px;
-    bottom: -7px;
+    bottom: 0;
   }
 }
 
-.tous__controls {
+.tours__controls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
   margin-top: 0;
+  margin-bottom: 3px;
 }
 
 .tours__info {
@@ -3165,6 +3194,11 @@ h2::after {
   color: rgba(2, 102, 193, 0.2);
 }
 
+@media (max-width: 1199px) {
+  .training {
+    padding-bottom: 23px;
+  }
+}
 .training img {
   width: 100%;
 }
@@ -3173,8 +3207,8 @@ h2::after {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
-  margin-bottom: 20px;
   max-width: 300px;
+  margin-bottom: 32px;
   margin-top: 21px;
 }
 @media (max-width: 1199px) {
@@ -3193,12 +3227,12 @@ h2::after {
 
 .training__wrapper {
   position: relative;
-  padding-top: 52px;
+  padding-top: 43px;
   overflow: hidden;
 }
 @media (max-width: 1199px) {
   .training__wrapper {
-    padding-top: 72px;
+    padding-top: 63px;
     padding-bottom: 9px;
   }
 }
@@ -3251,7 +3285,7 @@ h2::after {
 }
 
 .training__slider {
-  margin: 20px 0 37px;
+  margin: 8px 0 37px;
   height: 100%;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -3431,7 +3465,7 @@ h2::after {
   grid-template-columns: repeat(4, max-content);
   padding-left: 10px;
   margin-top: 27px;
-  padding-bottom: 10px;
+  padding-bottom: 24px;
 }
 @media (max-width: 1199px) {
   .training__process-list {
@@ -3441,6 +3475,7 @@ h2::after {
        -moz-column-gap: 19px;
             column-gap: 19px;
     row-gap: 91px;
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
@@ -3715,6 +3750,7 @@ h2::after {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
+  margin-top: -16px;
 }
 @media (max-width: 767px) {
   .about {
@@ -3797,8 +3833,9 @@ h2::after {
   -ms-grid-column-span: 1;
   grid-column: 2/3;
   padding-right: 120px;
-  padding-top: 77px;
+  padding-top: 79px;
   padding-left: 15px;
+  padding-bottom: 52px;
 }
 @media (max-width: 1199px) {
   .about__content {
@@ -3816,7 +3853,7 @@ h2::after {
 .about__image {
   position: absolute;
   left: 0;
-  top: 54px;
+  top: 56px;
   z-index: -1;
 }
 @media (max-width: 1199px) {
@@ -3830,16 +3867,28 @@ h2::after {
   }
 }
 
+.reviews .container {
+  padding-bottom: 15px;
+}
 @media (max-width: 767px) {
   .reviews .container {
     padding: 0;
   }
 }
 
+.reviews h2 {
+  padding-top: 7px;
+}
 @media (max-width: 767px) {
   .reviews h2 {
     padding-left: 15px;
   }
+}
+
+.reviews__slider-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .reviews__controls {
@@ -3847,7 +3896,12 @@ h2::after {
   display: -ms-flexbox;
   display: flex;
   gap: 4px;
-  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.reviews__slider {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .reviews__slider-list {
@@ -3867,7 +3921,7 @@ h2::after {
   gap: 30px;
   width: 700px;
   height: auto;
-  padding: 20px;
+  padding: 20px 40px 20px 20px;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
           box-shadow: 0px 0px 20px 0px rgba(28, 51, 116, 0.1);
 }
@@ -3890,6 +3944,8 @@ h2::after {
   font-size: 14px;
   line-height: 22px;
   margin: 0;
+  margin-top: -3px;
+  margin-bottom: 3px;
 }
 @media (max-width: 1199px) {
   .reviews__slider-item p {
@@ -3912,6 +3968,7 @@ h2::after {
 }
 .reviews__personal-info h3 {
   margin: 8px 0;
+  margin-top: 14px;
   font-size: 13px;
   line-height: 13px;
   font-weight: 700;
@@ -4605,7 +4662,8 @@ input:disabled:disabled::placeholder {
   font-weight: 600;
   line-height: 18px;
 }
-.footer__contacts-item a, .footer__contacts-item p {
+.footer__contacts-item a,
+.footer__contacts-item p {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
@@ -4638,6 +4696,86 @@ input:disabled:disabled::placeholder {
 .footer__map {
   width: 585px;
   height: 324px;
+}
+
+.footer__sotial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__sotial-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: #2d383f;
+  border: 1px solid rgba(45, 56, 63, 0.3);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+@media (hover: hover) {
+  .footer__sotial-link:hover:not(.focus-visible) {
+    border-color: #2d383f;
+  }
+}
+.footer__sotial-link.focus-visible:focus {
+  border-color: #2d383f;
+}
+.footer__sotial-link.focus-visible:active {
+  background-color: #0266c1;
+  border: none;
+}
+.footer__sotial-link.focus-visible:active svg {
+  color: #ffffff;
+}
+.footer__sotial-link:active:not(.focus-visible) {
+  background-color: #0266c1;
+  border: none;
+}
+.footer__sotial-link:active:not(.focus-visible) svg {
+  color: #ffffff;
+}
+.footer__sotial-link.is-disabled {
+  pointer-events: none;
+}
+.footer__sotial-link.is-disabled svg {
+  color: rgba(45, 56, 63, 0.3);
+}
+
+.footer__sotial-link--vk svg {
+  width: 16px;
+  height: 9px;
+}
+
+.footer__sotial-link--odnoklassniki svg {
+  width: 9px;
+  height: 16px;
+}
+
+.footer__sotial-link--reddit svg {
+  width: 14px;
+  height: 15px;
+}
+
+.footer__nav-wrapper p {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 100%;
+  text-align: center;
 }
 
 /* @mixin hover-focus {

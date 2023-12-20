@@ -1,17 +1,17 @@
 .tours {
   position: relative;
   padding-top: 120px;
-  padding-bottom: 100px;
+  padding-bottom: 109px;
   overflow: hidden;
 
   @include vp-1199 {
     padding-top: 65px;
-    padding-bottom: 45px;
+    padding-bottom: 54px;
   }
 
   @include vp-767 {
     padding-top: 40px;
-    padding-bottom: 15px;
+    padding-bottom: 29px;
     width: 350px;
   }
 
@@ -25,12 +25,17 @@
     }
 
     @include vp-767 {
-      margin-top: 25px;
+      margin-top: 22px;
     }
   }
 
   img {
     width: 100%;
+  }
+
+  h2::after {
+    font-size: 55px;
+    line-height: 55px;
   }
 }
 
@@ -42,21 +47,21 @@
 
   h2 {
     margin: 0;
-    padding-top: 3px;
 
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
-      bottom: -7px;
+      bottom: 0;
     }
   }
 }
 
 
-.tous__controls {
+.tours__controls {
   display: flex;
   gap: 4px;
   margin-top: 0;
+  margin-bottom: 3px;
 }
 
 .tours__info {
@@ -149,11 +154,13 @@
 
   @include hover-focus {
     outline: none;
+
     a {
       color: $color-active;
     }
+
     svg {
-     color: $color-active;
+      color: $color-active;
     }
   }
 
@@ -161,17 +168,18 @@
     a {
       color: $color-additional-100;
     }
+
     svg {
-     color: $color-additional-100;
+      color: $color-additional-100;
     }
   }
 
   &.is-disabled {
     color: $color-additional-100;
     pointer-events: none;
+
     svg {
       color: $color-additional-20;
-     }
+    }
   }
 }
-

@@ -31,7 +31,8 @@
     line-height: 18px;
   }
 
-  a, p {
+  a,
+  p {
     margin: 0;
     font-size: 16px;
     font-weight: 400;
@@ -55,4 +56,77 @@
 .footer__map {
   width: 585px;
   height: 324px;
+}
+
+.footer__sotial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+
+}
+
+.footer__sotial-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  color: $color-text-primary;
+  border: 1px solid $color-text-primary-opacity-30;
+  transition: $trans-default;
+
+
+  @include hover-focus {
+    border-color: $color-text-primary;
+  }
+
+  @include active {
+
+    background-color: $color-additional-100;
+    border: none;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+
+  &.is-disabled {
+    pointer-events: none;
+
+    svg {
+      color: $color-text-primary-opacity-30;
+    }
+  }
+}
+
+.footer__sotial-link--vk {
+  svg {
+    width: 16px;
+    height: 9px;
+  }
+}
+
+.footer__sotial-link--odnoklassniki {
+  svg {
+    width: 9px;
+    height: 16px;
+  }
+}
+
+.footer__sotial-link--reddit {
+  svg {
+    width: 14px;
+    height: 15px;
+  }
+}
+
+.footer__nav-wrapper {
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 100%;
+    text-align: center;
+  }
+
 }

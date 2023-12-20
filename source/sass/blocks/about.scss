@@ -2,6 +2,7 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-top: -16px;
 
   @include vp-767 {
     display: flex;
@@ -74,8 +75,9 @@
 .about__content {
   grid-column: 2/3;
   padding-right: 120px;
-  padding-top: 77px;
+  padding-top: 79px;
   padding-left: 15px;
+  padding-bottom: 52px;
 
   @include vp-1199 {
     padding-top: 39px;
@@ -91,7 +93,7 @@
 .about__image {
   position: absolute;
   left: 0;
-  top: 54px;
+  top: 56px;
   z-index: -1;
 
   @include vp-1199 {

@@ -1,7 +1,5 @@
-import swiper from '../../vendor/swiper.js';
-
 const initAdvSlider = () => {
-  let desktop = window.matchMedia('(min-width: 1200px)');
+  const desktop = window.matchMedia('(min-width: 1200px)');
   const advSlider = document.querySelector('[data-swiper="adv-slider"]');
   const buttonNext = document.querySelector('[data-button="adv-button-next"]');
   const buttonPrev = document.querySelector('[data-button="adv-button-prev"]');

@@ -15,16 +15,19 @@ const initToursSlider = () => {
       loop: false,
       breakpoints: {
         1200: {
+          initialSlide: 4,
           slidesPerView: 3,
           spaceBetween: 30,
         },
 
         768: {
+          initialSlide: 3,
           slidesPerView: 2,
           spaceBetween: 18,
         },
 
         350: {
+          initialSlide: 3,
           slidesPerView: 1,
         },
       },
