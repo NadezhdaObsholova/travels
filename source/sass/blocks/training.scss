@@ -3,8 +3,13 @@
   @include vp-1199 {
     padding-bottom: 23px;
   }
+
   img {
     width: 100%;
+  }
+
+  @include vp-767 {
+    padding-bottom: 21px;
   }
 }
 
@@ -24,9 +29,8 @@
     }
 
     @include vp-767 {
-      margin-top: 10px;
-      margin-bottom: 32px;
       margin-top: 1px;
+      margin-bottom: 32px;
     }
   }
 }
@@ -42,8 +46,8 @@
   }
 
   @include vp-767 {
-    padding-top: 41px;
-    padding-bottom: 15px;
+    padding-top: 27px;
+    padding-bottom: 16px;
     width: 350px;
   }
 
@@ -71,6 +75,7 @@
 
     p {
       margin-top: 16px;
+
       font-size: 14px;
       line-height: 20px;
     }
@@ -131,6 +136,10 @@
     line-height: 16px;
     margin-top: 15px;
     margin-bottom: 0;
+
+    @include vp-767 {
+      margin-top: 14px;
+    }
   }
 
   @include vp-767 {
@@ -245,7 +254,9 @@
     grid-template-columns: 1fr;
     padding-left: 29px;
     margin-top: 0;
+    padding-bottom: 0;
     row-gap: 25px;
+    margin-bottom: 0;
   }
 }
 

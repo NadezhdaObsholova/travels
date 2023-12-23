@@ -1,31 +1,79 @@
 .reviews .container {
-  padding-bottom: 15px;
+
   @include vp-767 {
     padding: 0;
   }
 }
 
-.reviews h2 {
-  padding-top: 7px;
+.reviews {
+  h2 {
+    padding-top: 7px;
+    margin-top: 45px;
+    margin-bottom: 28px;
 
-  @include vp-767 {
-    padding-left: 15px;
+    @include vp-1199 {
+      font-size: 25px;
+      line-height: 25px;
+      margin-top: 48px;
+    }
+
+    @include vp-767 {
+      padding-left: 15px;
+      font-size: 22px;
+      line-height: 22px;
+      margin-top: 34px;
+      margin-bottom: 0;
+    }
+  }
+
+
+  h2:after {
+    @include vp-1199 {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 }
 
+.reviews__controls {
+  @include vp-1199 {
+  margin-top: 15px;
+  }
+
+  @include vp-767 {
+    margin-bottom: -2px;
+    margin-top: 0;
+    }
+}
 .reviews__slider-header {
   align-items: center;
+  @include vp-767 {
+  align-items: flex-end;
+  }
 }
 
 .reviews__controls {
   display: flex;
   gap: 4px;
-  margin-bottom: 17px;
+
+  @include vp-767 {
+    padding-right: 15px;
+  }
 }
 
 .reviews__slider {
-padding-left: 10px;
-padding-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  @include vp-1199 {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 47px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 19px;
+  }
 }
 
 .reviews__slider-list {
@@ -34,6 +82,16 @@ padding-right: 10px;
   min-height: 293px;
   list-style: none;
   margin: 0;
+
+  @include vp-1199 {
+    margin-top: 18px;
+    min-height: 277px;
+    }
+
+    @include vp-767 {
+      margin-top: 7px;
+
+      }
 }
 
 .reviews__slider-item {
@@ -46,25 +104,44 @@ padding-right: 10px;
 
   @include vp-1199 {
     width: 565px;
+    padding: 20px 30px 20px 20px;
   }
 
   @include vp-767 {
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
     width: 320px;
+    padding: 20px;
   }
 
   p {
     font-size: 14px;
     line-height: 22px;
     margin: 0;
-    margin-top: -3px;
-    margin-bottom: 3px;
+    margin-top: -2px;
+    margin-bottom: 2px;
 
     @include vp-1199 {
       font-size: 12px;
       line-height: 18px;
+      margin-top: 4px;
+      margin-bottom: 9px;
     }
+
+    @include vp-767 {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.reviews__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 10px;
+
+  @include vp-1199 {
+  padding-bottom: 3px;
   }
 }
 
@@ -82,15 +159,20 @@ padding-right: 10px;
   }
 
   h3 {
-    margin: 8px 0;
-    margin-top: 14px;
+    margin: 0;
     font-size: 13px;
     line-height: 13px;
     font-weight: 700;
+    margin-bottom: 8px;
+
+    @include vp-1199 {
+      margin-bottom: 6px;
+    }
 
     @include vp-767 {
       font-size: 12px;
       line-height: 12px;
+      margin-top: 6px;
     }
   }
 }
@@ -109,7 +191,7 @@ padding-right: 10px;
 
     @include vp-767 {
       min-width: 280px;
+      height: 169px;
     }
   }
 }
-
