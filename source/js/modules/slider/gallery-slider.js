@@ -20,6 +20,7 @@ const initGallerySlider = () => {
         },
 
         768: {
+          initialSlide: 5,
           slidesPerView: 3,
           spaceBetween: 5,
         },
