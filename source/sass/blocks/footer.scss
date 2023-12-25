@@ -1,21 +1,104 @@
+.footer__contacts-wrapper.container {
+  @include vp-1199 {
+  padding-left: 0;
+  padding-right: 0;
+  }
+}
 .footer__contacts-wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 100px 0;
+  padding-top: 59px;
+  padding-bottom: 142px;
+
+  @include vp-1199 {
+    display: grid;
+    flex-direction: column;
+    padding-top: 38px;
+    padding-bottom: 89px;
+  }
+  @include vp-767 {
+    padding-top: 29px;
+    padding-bottom: 59px;
+  }
+  h2 {
+
+    @include vp-1199 {
+    font-size: 25px;
+    line-height: 25px;
+    }
+
+    @include vp-767 {
+      font-size: 22px;
+      line-height: 22px;
+      margin-bottom: 14px;
+      }
+  }
+
+  h2::after {
+
+    @include vp-1199 {
+    font-size: 40px;
+    line-height: 40px;
+    }
+
+    @include vp-767 {
+      font-size: 26px;
+      line-height: 26px;
+      }
+  }
+
+  p {
+
+    margin-top: -6px;
+    margin-bottom: 41px;
+    @include vp-1199 {
+      margin-top: -3px;
+      margin-bottom: 33px;
+    }
+
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 22px;
+      }
+  }
 }
 
 .footer__contacts {
   display: flex;
   flex-direction: column;
+
+  @include vp-1199 {
+    padding-bottom: 38px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  @include vp-767 {
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .footer__contacts-list {
   list-style: none;
   display: flex;
   flex-direction: column;
-  row-gap: 25px;
+  row-gap: 27px;
   padding: 0;
   margin: 0;
+
+  @include vp-1199 {
+  flex-direction: row;
+  column-gap: 39px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    row-gap: 22px;
+    width: 190px;
+  }
 }
 
 .footer__contacts-item {
@@ -24,11 +107,28 @@
   align-items: center;
   column-gap: 30px;
 
+  @include vp-1199 {
+    column-gap: 8px;
+  }
+  @include vp-767 {
+    column-gap: 10px;
+    align-items: start;
+  }
   h3 {
     margin: 8px 0;
     font-size: 18px;
     font-weight: 600;
     line-height: 18px;
+
+    @include vp-1199 {
+      font-size: 16px;
+      line-height: 16px;
+    }
+
+    @include vp-1199 {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 
   a,
@@ -37,13 +137,50 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    @include vp-1199 {
+      font-size: 14px;
+      line-height: 22px;
+    }
+    @include vp-767 {
+
+      line-height: 20px;
+    }
   }
 
 }
-
+/*
+.footer__contacts-item:last-child() {
+  .footer__contacts-icon {
+  @include vp-767 {
+    outline: 1px solid red;
+    margin-top: -23px;
+    }
+  }
+}
+*/
 .footer__contacts-icon {
   grid-column: 1/2;
   grid-row: 1/3;
+  margin-top: 14px;
+  svg{
+    width: 26px;
+    height: 26px;
+     }
+
+  @include vp-1199 {
+    margin-top: -8px;
+    }
+
+    @include vp-767 {
+      margin-top: 8px;
+      }
+
+    @include vp-767 {
+      svg{
+     width: 22px;
+     height: 22px;
+      }
+      }
 }
 
 .footer__header {
@@ -51,11 +188,23 @@
   flex-direction: column;
   align-items: start;
   width: 500px;
+
+  @include vp-767 {
+    width: auto;
+    }
 }
 
 .footer__map {
   width: 585px;
   height: 324px;
+  padding-top: 104px;
+
+  @include vp-1199 {
+
+    width: 100%;
+    padding: 0;
+
+    }
 }
 
 .footer__sotial {
@@ -63,7 +212,16 @@
   flex-wrap: wrap;
   gap: 15px;
   justify-content: center;
+  margin-top: 24px;
+  @include vp-1199 {
+    margin-top: 28px;
+    gap: 18px;
+  }
 
+  @include vp-767 {
+    margin-top: 23px;
+
+  }
 }
 
 .footer__sotial-link {
@@ -122,11 +280,43 @@
 }
 
 .footer__nav-wrapper {
+  position: relative;
+  padding-bottom: 20px;
   p {
     font-size: 12px;
     font-weight: 300;
     line-height: 100%;
     text-align: center;
+    margin-top: 22px;;
+    margin-bottom: 0;
+
+    @include vp-1199 {
+      margin-top: 34px;
+    }
+
+    @include vp-767 {
+      margin-top: 23px;
+    }
   }
 
+}
+
+.footer__nav-wrapper::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: $color-text-primary-opacity-20;
+  top: -36px;
+  left: 0;
+
+
+  @include vp-1199 {
+    top: -34px;
+  }
+
+  @include vp-767 {
+    top: -24px;
+  }
 }

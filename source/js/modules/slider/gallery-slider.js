@@ -12,7 +12,7 @@ const initGallerySlider = () => {
         nextEl: buttonNext,
         prevEl: buttonPrev,
       },
-      loop: false,
+      loop: true,
       breakpoints: {
         1200: {
           slidesPerView: 'auto',
@@ -20,14 +20,13 @@ const initGallerySlider = () => {
         },
 
         768: {
-          initialSlide: 5,
           slidesPerView: 3,
           spaceBetween: 5,
         },
 
         350: {
           slidesPerView: 2,
-          spaceBetween: 5,
+          spaceBetween: 3,
         },
       },
     });
