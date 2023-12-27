@@ -1,5 +1,4 @@
 .training {
-
   @include vp-1199 {
     padding-bottom: 23px;
   }
@@ -14,6 +13,9 @@
 }
 
 .training__slider-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
 
   h3 {
     font-size: 21px;
@@ -57,7 +59,6 @@
     margin: 0;
     margin-top: 12px;
   }
-
 }
 
 .training__about {
@@ -80,12 +81,6 @@
       line-height: 20px;
     }
   }
-}
-
-.training__slider-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
 }
 
 .training__slider {
@@ -173,13 +168,11 @@
   border: 1px solid $color-text-primary-opacity-30;
   transition: $trans-default;
 
-
   @include hover-focus {
     border-color: $color-text-primary;
   }
 
   @include active {
-
     background-color: $color-additional-100;
     border: none;
 
@@ -187,13 +180,13 @@
       color: $color-default-white;
     }
   }
+}
 
-  &.is-disabled {
-    pointer-events: none;
+.training__sotial.is-disabled {
+  pointer-events: none;
 
-    svg {
-      color: $color-text-primary-opacity-30;
-    }
+  svg {
+    color: $color-text-primary-opacity-30;
   }
 }
 
@@ -227,7 +220,6 @@
     @include vp-767 {
       font-size: 16px;
       line-height: 16px;
-      margin-top: 10px;
       margin-bottom: 23px;
       margin-top: 1px;
     }

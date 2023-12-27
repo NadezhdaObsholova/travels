@@ -253,7 +253,7 @@
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets {
+.swiper-horizontal > .swiper-pagination-bullets {
   position: absolute;
   display: flex;
   gap: 12px;
@@ -286,23 +286,21 @@
     width: 8px;
     height: 8px;
   }
-}
 
-.swiper-pagination-bullet-active {
-  background-color: $color-default-white;
-}
-
-.swiper-pagination-bullet {
   @include focus {
-   outline: 1px solid $color-default-white-50;
-   outline-offset: 1px;
+    outline: 1px solid $color-default-white-50;
+    outline-offset: 1px;
   }
 
   @include hover {
     background-color: $color-default-white-50;
-   }
+  }
 
-   @include active {
+  @include active {
     background-color: $color-default-white-50;
-   }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background-color: $color-default-white;
 }

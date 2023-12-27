@@ -150,10 +150,10 @@
   @include active {
     color: $color-default-white-50;
   }
+}
 
-  &.is-disabled {
-    pointer-events: none;
-  }
+.main-nav__phone.is-disabled {
+  pointer-events: none;
 }
 
 .main-nav__list {
@@ -228,16 +228,15 @@
     @include vp-1199 {
       padding-left: 45px;
       padding-right: 50px;
-
     }
+
     @include vp-767 {
       display: flex;
       flex-direction: column;
       align-items: center;
-           padding-left: 15px;
-           padding-right: 6px;
-           row-gap: 21px;
-
+      padding-left: 15px;
+      padding-right: 6px;
+      row-gap: 21px;
     }
   }
 
@@ -246,8 +245,6 @@
 
     @include vp-1199 {
       padding: 0;
-
-
     }
   }
 
@@ -261,7 +258,6 @@
       gap: 25px;
       margin-left: 0;
       margin-top: -5px;
-
     }
 
     @include vp-767 {
@@ -274,38 +270,32 @@
       justify-items: center;
       text-align: center;
     }
-
   }
 
   .main-nav__toggle {
     display: none;
   }
 
-
   .main-nav__phone {
     @include vp-1199 {
       display: none;
     }
-  }
-
-
-
-  .main-nav__phone {
 
     @include active {
       color: $color-additional-100;
     }
+  }
 
-    &.is-disabled {
-      color: $color-additional-100;
-      pointer-events: none;
-    }
+  .main-nav__phone.is-disabled {
+    color: $color-additional-100;
+    pointer-events: none;
   }
 
   .main-nav__logo-link {
     @include vp-767 {
-    margin-left: -9px;
+      margin-left: -9px;
     }
+
     @include hover-focus {
       opacity: 0.7;
       outline: none;
@@ -315,5 +305,4 @@
       opacity: 0.3;
     }
   }
-
 }

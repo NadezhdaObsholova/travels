@@ -1,9 +1,10 @@
 .footer__contacts-wrapper.container {
   @include vp-1199 {
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
+
 .footer__contacts-wrapper {
   display: flex;
   justify-content: space-between;
@@ -16,41 +17,41 @@
     padding-top: 38px;
     padding-bottom: 89px;
   }
+
   @include vp-767 {
     padding-top: 29px;
     padding-bottom: 59px;
   }
-  h2 {
 
+  h2 {
     @include vp-1199 {
-    font-size: 25px;
-    line-height: 25px;
+      font-size: 25px;
+      line-height: 25px;
     }
 
     @include vp-767 {
       font-size: 22px;
       line-height: 22px;
       margin-bottom: 14px;
-      }
+    }
   }
 
   h2::after {
-
     @include vp-1199 {
-    font-size: 40px;
-    line-height: 40px;
+      font-size: 40px;
+      line-height: 40px;
     }
 
     @include vp-767 {
       font-size: 26px;
       line-height: 26px;
-      }
+    }
   }
 
   p {
-
     margin-top: -6px;
     margin-bottom: 41px;
+
     @include vp-1199 {
       margin-top: -3px;
       margin-bottom: 33px;
@@ -60,7 +61,7 @@
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 22px;
-      }
+    }
   }
 }
 
@@ -90,8 +91,8 @@
   margin: 0;
 
   @include vp-1199 {
-  flex-direction: row;
-  column-gap: 39px;
+    flex-direction: row;
+    column-gap: 39px;
   }
 
   @include vp-767 {
@@ -110,10 +111,12 @@
   @include vp-1199 {
     column-gap: 8px;
   }
+
   @include vp-767 {
     column-gap: 10px;
     align-items: start;
   }
+
   h3 {
     margin: 8px 0;
     font-size: 18px;
@@ -137,50 +140,42 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+
     @include vp-1199 {
       font-size: 14px;
       line-height: 22px;
     }
-    @include vp-767 {
 
+    @include vp-767 {
       line-height: 20px;
     }
   }
+}
 
-}
-/*
-.footer__contacts-item:last-child() {
-  .footer__contacts-icon {
-  @include vp-767 {
-    outline: 1px solid red;
-    margin-top: -23px;
-    }
-  }
-}
-*/
 .footer__contacts-icon {
   grid-column: 1/2;
   grid-row: 1/3;
   margin-top: 14px;
-  svg{
+
+  svg {
     width: 26px;
     height: 26px;
-     }
+  }
 
   @include vp-1199 {
     margin-top: -8px;
+  }
+
+  @include vp-767 {
+    margin-top: 8px;
+  }
+
+  @include vp-767 {
+    svg {
+      width: 22px;
+      height: 22px;
     }
-
-    @include vp-767 {
-      margin-top: 8px;
-      }
-
-    @include vp-767 {
-      svg{
-     width: 22px;
-     height: 22px;
-      }
-      }
+  }
 }
 
 .footer__header {
@@ -191,7 +186,7 @@
 
   @include vp-767 {
     width: auto;
-    }
+  }
 }
 
 .footer__map {
@@ -200,11 +195,9 @@
   padding-top: 104px;
 
   @include vp-1199 {
-
     width: 100%;
     padding: 0;
-
-    }
+  }
 }
 
 .footer__sotial {
@@ -213,6 +206,7 @@
   gap: 15px;
   justify-content: center;
   margin-top: 24px;
+
   @include vp-1199 {
     margin-top: 28px;
     gap: 18px;
@@ -220,7 +214,6 @@
 
   @include vp-767 {
     margin-top: 23px;
-
   }
 }
 
@@ -240,7 +233,6 @@
   }
 
   @include active {
-
     background-color: $color-additional-100;
     border: none;
 
@@ -248,13 +240,13 @@
       color: $color-default-white;
     }
   }
+}
 
-  &.is-disabled {
-    pointer-events: none;
+.footer__sotial-link.is-disabled {
+  pointer-events: none;
 
-    svg {
-      color: $color-text-primary-opacity-30;
-    }
+  svg {
+    color: $color-text-primary-opacity-30;
   }
 }
 
@@ -282,12 +274,13 @@
 .footer__nav-wrapper {
   position: relative;
   padding-bottom: 20px;
+
   p {
     font-size: 12px;
     font-weight: 300;
     line-height: 100%;
     text-align: center;
-    margin-top: 22px;;
+    margin-top: 22px;
     margin-bottom: 0;
 
     @include vp-1199 {
@@ -298,7 +291,6 @@
       margin-top: 23px;
     }
   }
-
 }
 
 .footer__nav-wrapper::after {

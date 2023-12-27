@@ -21,9 +21,10 @@
     }
   }
 
-  h2:after {
+  h2::after {
     left: -29%;
-     @include vp-767 {
+
+    @include vp-767 {
       left: -10%;
     }
   }
@@ -107,7 +108,6 @@
     width: 320px;
     padding: 19px 10px;
     min-height: 239px;
-
   }
 
   h3 {
@@ -143,7 +143,6 @@
       line-height: 18px;
     }
   }
-
 }
 
 .adv__slider-item:last-child:nth-child(2n+1) {

@@ -40,7 +40,6 @@
 }
 
 .tours__header {
-
   @include vp-767 {
     align-items: end;
   }
@@ -55,7 +54,6 @@
     }
   }
 }
-
 
 .tours__controls {
   display: flex;
@@ -151,7 +149,6 @@
     letter-spacing: 0.56px;
   }
 
-
   @include hover-focus {
     outline: none;
 
@@ -173,13 +170,13 @@
       color: $color-additional-100;
     }
   }
+}
 
-  &.is-disabled {
-    color: $color-additional-100;
-    pointer-events: none;
+.tours__show-all.is-disabled {
+  color: $color-additional-100;
+  pointer-events: none;
 
-    svg {
-      color: $color-additional-20;
-    }
+  svg {
+    color: $color-additional-20;
   }
 }
