@@ -121,6 +121,8 @@
 
   @include vp-767 {
     top: -0;
+    max-height: 400px;
+    overflow: hidden;
   }
 }
 

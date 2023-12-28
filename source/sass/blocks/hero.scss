@@ -77,13 +77,14 @@
       margin-bottom: 452px;
     }
 
-      @include vp-767 {
+    @include vp-767 {
       margin-bottom: 0;
     }
   }
 }
 
 .hero__slider {
+  position: relative;
   min-height: 100%;
 }
 
@@ -266,9 +267,11 @@
 .swiper-horizontal > .swiper-pagination-bullets {
   position: absolute;
   display: flex;
+  width: max-content;
   gap: 12px;
   bottom: 97px;
-  left: 1245px;
+  left: auto;
+  right: 120px;
 
   @include vp-1199 {
     bottom: 40px;

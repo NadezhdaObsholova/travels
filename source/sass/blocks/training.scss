@@ -389,10 +389,10 @@
   height: 2px;
   background-color: $color-additional-20;
   bottom: -10px;
-  left: 10px;
+  left: 7px;
 
   @include vp-1199 {
-    width: size(345px);
+    width: 46vw;
     bottom: -17px;
   }
 
@@ -407,7 +407,7 @@
     position: absolute;
     content: "";
     display: block;
-    width: 345px;
+    width: 46vw;
     height: 2px;
     background-color: $color-additional-20;
     top: -21px;
