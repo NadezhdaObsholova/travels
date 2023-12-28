@@ -32,14 +32,14 @@
 
       <div class="header__nav main-nav">
 
-        <div class="main-nav__wrapper">
-          <button class="main-nav__toggle" type="button" aria-label="кнопка управления меню."></button>
+        <div class="main-nav__wrapper" data-header="data-header">
+          <button class="main-nav__toggle" type="button" aria-label="кнопка управления меню." data-button="menu-toggle"></button>
           <a class="main-nav__logo-link" href="index.html" aria-label="логтип сайта">
             <svg width="142" height="42">
               <use href="img/sprite.svg#logo-header"></use>
             </svg>
           </a>
-          <ul class="main-nav__list">
+          <ul class="main-nav__list" data-burger>
             <li class="main-nav__item"><a href="#tours">Туры</a></li>
             <li class="main-nav__item"><a href="#training">Обучение</a></li>
             <li class="main-nav__item"><a href="#about">О нас</a></li>
@@ -60,7 +60,7 @@
               <div class="hero__background-img">
                 <picture>
                   <source media="(min-width: 1200px)"
-                    srcset="img/hero/caucasus-desktop.webp, img/hero/caucasus-desktop@2x.webp 2x" width="1200"
+                    srcset="img/hero/caucasus-desktop.webp, img/hero/caucasus-desktop@2x.webp 2x" width="1440"
                     type="image/webp">
                   <source media="(min-width: 768px)"
                     srcset="img/hero/caucasus-tablet.webp, img/hero/caucasus-tablet@2x.webp 2x" width="768"
@@ -1063,7 +1063,7 @@
         </div>
 
       </section>
-      <section class="gallery" data-test="gallery">
+      <section class="gallery" id="gallery" data-test="gallery">
         <div class="gallery__wrapper">
 
           <div class="gallery__slider-header block-header">
@@ -1221,7 +1221,7 @@
     </main>
 
     <footer class="footer" data-test="footer">
-      <div class="footer__contacts-wrapper container">
+      <div class="footer__contacts-wrapper container" id="contacts">
         <div class="footer__contacts">
           <div class="footer__header block-header">
 
