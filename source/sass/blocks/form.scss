@@ -2,6 +2,16 @@
   display: grid;
   background-color: $color-form-bcg;
   color: $color-default-white;
+  max-height: 760px;
+  overflow: hidden;
+
+  @include vp-1199 {
+    max-height: 680px;
+  }
+
+  @include vp-767 {
+    max-height: 620px;
+  }
 
   h2 {
     font-size: 35px;
@@ -48,13 +58,25 @@
 .form__bkg {
   grid-column: 1/2;
   grid-row: 1/2;
-  display: flex;
   height: 100%;
+  overflow: hidden;
+
+  @include vp-1199 {
+    height: 680px;
+  }
+
+  @include vp-767 {
+    height: 620px;
+  }
 
   img {
-    height: 100%;
-    object-fit: cover;
-  }
+    width: 100%;
+
+    @include vp-767 {
+      height: 100%;
+      width: autoy;
+    }
+   }
 }
 
 .form__wrapper {

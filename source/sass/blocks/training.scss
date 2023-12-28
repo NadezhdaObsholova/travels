@@ -50,7 +50,7 @@
   @include vp-767 {
     padding-top: 27px;
     padding-bottom: 16px;
-    width: 350px;
+    width: 100%;
   }
 
   ul {
@@ -392,7 +392,7 @@
   left: 10px;
 
   @include vp-1199 {
-    width: 345px;
+    width: size(345px);
     bottom: -17px;
   }
 

@@ -26,7 +26,7 @@
     min-height: 82px;
     padding: 0 45px;
     padding-top: 5px;
-    max-width: 768px;
+    max-width: 100%;
   }
 
   @include vp-767 {
@@ -57,8 +57,13 @@
     height: 26px;
   }
 
-  @include vp-767 {
-    margin-top: 5px;
+  @include focus {
+    border: 1px solid currentColor;
+    outline: none;
+  }
+
+  @include active {
+    border: none;
   }
 }
 
@@ -69,7 +74,7 @@
   display: block;
   width: 26px;
   height: 26px;
-  top: -4px;
+  top: 0;
   left: 0;
   background-image: url("../../img/sprite/menu-open.svg");
 }
@@ -215,6 +220,9 @@
   }
 }
 
+.is-main-nav-open {
+  overflow: hidden;
+}
 
 .main-nav--footer {
   position: relative;

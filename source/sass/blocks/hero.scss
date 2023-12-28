@@ -2,10 +2,19 @@
   display: flex;
   min-width: 100%;
   min-height: 568px;
+  max-height: 800px;
   top: -126px;
   z-index: 2;
   color: $color-default-white;
   background-color: $color-hero-bcg;
+
+  @include vp-1199 {
+    max-height: 1024px;
+  }
+
+  @include vp-767 {
+    max-height: 468px;
+  }
 
   ul {
     list-style: none;
@@ -68,7 +77,7 @@
       margin-bottom: 452px;
     }
 
-    @include vp-767 {
+      @include vp-767 {
       margin-bottom: 0;
     }
   }
@@ -93,6 +102,7 @@
   grid-row: 1/1;
   z-index: -2;
   height: 100%;
+  overflow: hidden;
 
   img {
     height: 100%;
@@ -262,11 +272,11 @@
 
   @include vp-1199 {
     bottom: 40px;
-    left: 345px;
+    left: calc(50% - 39px);
   }
 
   @include vp-767 {
-    left: 139px;
+    left: calc(50% - 36px);
   }
 }
 
