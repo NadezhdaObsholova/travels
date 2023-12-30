@@ -61,7 +61,7 @@
 }
 
 .gallery__slider-header {
-  padding-left: 120px;
+  padding-left: calc((100% - 1200px) / 2);
 
   @include vp-1199 {
     padding-left: 45px;
