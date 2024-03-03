@@ -1715,15 +1715,15 @@ h2::after {
   height: 26px;
   top: 0;
   left: 0;
-  background-image: url("../../img/sprite/menu-open.svg");
+  background-image: url("../img/sprite/menu-open.svg");
 }
 
 .main-nav__toggle::after {
-  background-image: url("../../img/sprite/menu-open.svg");
+  background-image: url("../img/sprite/menu-open.svg");
 }
 
 .main-nav__toggle-close::after {
-  background-image: url("../../img/sprite/menu-close.svg");
+  background-image: url("../img/sprite/menu-close.svg");
 }
 
 .main-nav__logo-link {
